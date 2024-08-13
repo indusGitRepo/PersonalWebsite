@@ -5,42 +5,122 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Title of my Website, name this smth else later this name is so lame-->
         <title>Skills and Experiences</title>
         <link rel="stylesheet" href="skillsStyle.css">
+        <script src="skills.js" defer></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans Mono">
     </head>
 </body>
+    <!-- <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="#"><img src="./images/cv.png" alt="logo"></a></li>
+                <input type="checkbox" id="checkbox">
+                <span class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/Home.html" class="navbar_link">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/AboutMe.html" class="navbar_link">About Me</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Skills.html" class="navbar_link">Skills and Experiences</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Projects.html" class="navbar_link">Projects</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Contact.html" class="navbar_link">Contact</a>
+                    </li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header> -->
+    <div class="logo-container">
+        <a href="Home.html">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="/" id="navbar_logo">NEXT</a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="/Home.html" class="navbar_link">Home</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/AboutMe.html" class="navbar_link">About Me</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/Skills.html" class="navbar_link">Skills and Experiences</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/Projects.html" class="navbar_link">Projects</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/Contact.html" class="navbar_link">Contact</a>
-                </li>
+            
+                <div class="hamburger" onclick="toggleClass()">
+                    <h1>&#9776;</h1>
+                </div>
                 
-            </ul>
+                <div class="close-menu" onclick="X()">
+                    <h1>&#10005;</h1>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/Home.html" class="navbar_link">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/AboutMe.html" class="navbar_link">About Me</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Skills.html" class="navbar_link">Skills and Experiences</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Projects.html" class="navbar_link">Projects</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/Contact.html" class="navbar_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="imgs">
+                        
+                    <a href="https://www.linkedin.com/in/inderjeet-gill03/" target="_blank" class="img">
+                        <img src="images/navIcon.png" alt="cv icon" id="iconCV">
+                    </a>
+                    <a href="pdf/Resume.pdf" target="_blank" class="res">
+                        <img src="images/curriculum-vitae.png" alt="cv icon" id="img">
+                    </a>
+                    <a href="https://github.com/indusGitRepo" target="_blank" class="img">
+                        <img src="images/github.png" alt="cv icon" id="iconCV">
+                    </a>
+                </div>
+                
+            
         </div>
     </nav>
-    <header id="skills">Skills and Experiences</header>
+    
+        
+        <h2 id="header">Skills and Experiences</h2>
+        <p id="para1">Hi my name is Inderjeet and welcome to my website! Source code for this will be linked to my git. </p>
+        <div class="container">
+            <h2><a href="AboutMe.html" class="subtitle">About Me</a></h2>
+            <p1 id="para">1blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p1>
+            <h2><a href="Skills.html" class="subtitle">My Skills and Experiences</a></h2>
+            <p2 id="para2">2blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p2>
+            <h2><a href="Projects.html" class="subtitle">Projects</a></h2>
+            <p3 id="para3">3blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p3>
+            <h2><a href="Contact.html" class="subtitle">Connect with Me!</a></h2>
+            <p4 id="para4">4Contect meeeee</p4>
+        </div>
+        <div class="button-icon-container">
+            
+            <div class="icon-container">
+                <img src="images/cv.png" alt="cv icon" id="iconCV" class="icon">
+                <img src="images/linkedin.png" alt="cv icon" id="iconLINK" class="icon">
+                <img src="images/programmer.png" alt="cv icon" id="iconGIT" class="icon">
+            </div>
+            <div class="button-container">
+                <a href="pdf/Resume.pdf" target="_blank" class="button">View Resume</a>
+                <a href="https://www.linkedin.com/in/inderjeet-gill03/" target="_blank" class="button">Connect with me on LinkedIn</a>
+                <a href="https://github.com/indusGitRepo" target="_blank" class="button">Check my Projects!</a>
+            </div>
+        </div>
+        
+ 
 
 </body>
 </html>
 
 
+
+ 

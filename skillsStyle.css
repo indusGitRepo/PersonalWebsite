@@ -1,37 +1,70 @@
-body{
-    background-color: rgb(164, 150, 165);
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
+/* General styles */
+html, body {
+    height: 100%;
     margin: 0;
-    /* add font after */
+    padding: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
-.navbar{
+
+body {
+    background: radial-gradient(ellipse at 10%, #6e88eed0, transparent),
+    radial-gradient(ellipse at bottom, #c093d0, transparent), radial-gradient(ellipse at 100%, #a56eee, transparent), radial-gradient(ellipse at 50% 200%, #ee7dee, transparent);
+    position: relative;
+    padding-bottom: 100px;
+}
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Make sure it's above the navbar */
+     /* Add some padding if needed */
+}
+
+.logo {
+    height: 90px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+.imgs {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.imgs img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
+
+/* Navbar styles */
+.navbar {
     background-color: black;
     z-index: 999;
     position: sticky;
     top: 0;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align items to the right */
     height: 90px;
+    padding: 0 40px;
 }
-.navbar_container{
+
+.navbar_container {
     display: flex;
-    justify-content: space-between;
-    z-index: 1;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
     width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
 }
-.navbar_menu{
+
+.navbar_menu {
     display: flex;
     align-items: center;
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-.navbar_link{
+
+.navbar_link {
     color: rgb(232, 169, 226);
     font-size: 21px;
     font-family: 'Courier New', Courier, monospace;
@@ -42,38 +75,551 @@ body{
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    /* add cute cartoon in between each section */
-}
-.navbar_link {
-    position: relative;
-    text-decoration: none; 
-    color: rgb(232, 169, 226); 
-    transition: color 0.3s; 
+    position: relative; /* Ensure relative positioning for pseudo-elements */
+    transition: color 0.3s;
 }
 
 .navbar_link:hover {
-    color: transparent; 
-    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    transition: background-image 0.3s; 
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-image 0.3s;
 }
 
 .navbar_link::before {
-    content: ''; 
-    position: absolute; 
-    top: 20px; 
+    content: '';
+    position: absolute;
+    top: 20px;
     left: 0;
-    width: 0; 
+    width: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
-    color: black;
-    transition: width 0.3s; 
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+    transition: width 0.3s;
 }
 
 .navbar_link:hover::before {
-    width: 100%; 
+    width: 100%;
 }
+
+
+.flower-container {
+    position: fixed;
+    bottom: 70px; /* Space from the bottom of the viewport */
+    right: 0; /* Place it in the bottom right corner */
+    width: 30%; /* Adjust size as needed */
+    height: auto;
+    z-index: 1; /* Ensure it's above the body content */
+}
+
+#flower {
+    width: 100%; /* Make the flower fit the container */
+    height: auto;
+    opacity: 25%;
+}
+
+#title {
+    color: rgb(52, 2, 108);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 3rem; /* Adjust as needed */
+    letter-spacing: 5.5rem; /* Adjust as needed */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(to left, rgb(204, 150, 255), rgb(235, 234, 234));
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.182);
+    z-index: 1000;
+}
+
+.subtitle {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 20px 0;
+    margin-left: 50px;
+    border: black;
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: color 0.3s;
+    font-size: 2rem;
+    color: #000000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(156, 121, 244, 0.807);
+}
+
+.subtitle:hover {
+    color: #4d76a0; /* Change color on hover */
+}
+
+#header, .container, .button-icon-container, .button-container, .icon-container, #para1, #para, #para2, #para3, #para4 {
+    position: relative;
+    z-index: 1; /* Ensure these elements are above the title */
+}
+
+#header {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if height is set) */
+    text-align: center; /* Center text within the flex container */
+    font-family: 'Noto Sans Mon';
+    text-shadow: 2px 2px 5px rgba(80, 10, 218, 1);
+    color: rgb(21, 3, 43);
+    font-weight: 400;
+    font-size: 4.8rem;
+    margin-top: 100px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+#para, #para2, #para3, #para4 {
+    color: rgb(51, 42, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    margin-left: 50px;
+    word-wrap: break-word;
+    max-width: 50%;
+    text-indent: 20px;
+}
+
+#para1 {
+    color: rgb(51, 42, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    margin: 120px auto; /* Center horizontally and adjust top and bottom margins */
+    word-wrap: break-word;
+    max-width: 50%;
+    text-indent: 20px;
+    text-align: center; /* Center text within the element */
+}
+
+#para3 {
+    max-width: 80%;
+}
+
+.button-icon-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 120px; 
+    padding: 20px; 
+    position: absolute;
+    top: 60%; /* Adjust this value to move it up or down */
+    right: 5%; /* Position the container to the right side */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 90px; /* Space between buttons */
+}
+
+.button {
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9923e7;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0; /* Remove margin around buttons */
+    width: 300px; /* Fixed width for the buttons */
+    text-align: center; /* Centers text inside the button */
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat';
+}
+
+.button:hover {
+    background-color: #5400b3;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stacks icons vertically */
+    align-items: center; /* Centers icons horizontally */
+    gap: 60px; /* Space between icons */
+}
+
+.icon {
+    width: 90px;
+    height: auto;
+    margin: 0; /* Remove margin around icons */
+}
+
+.grid-container img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for medium screens */
+/* @media (max-width: 1350px) {
+    .button-icon-container {
+        flex-direction: column; 
+        align-items: center; 
+        right: 10px; 
+    }
+
+    .button-container, .icon-container {
+        align-items: center; 
+    }
+
+    #header {
+        margin-left: 0;
+        text-align: center; 
+    }
+} */
+/* @media(max-width: 1350px) {
+    .open-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        margin: 20px;
+    }
+    
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+
+    .navbar_link {
+        padding: 15px 0;
+    }
+    #title {
+        font-size: 2rem; 
+        letter-spacing: 1rem; 
+    }
+    .flower-container {
+        position: fixed;
+        bottom: 50px; 
+        right: 0; 
+        width: 30%; 
+        height: auto;
+        z-index: 1; 
+    }
+    
+    #flower {
+        width: 100%; 
+        height: auto;
+        opacity: 25%;
+    }
+    /* .button-icon-container {
+        position: relative; 
+        top: 50%; 
+        right: 100px; 
+        
+        flex-direction: row; 
+        align-items: flex-start; 
+        gap: 5px; 
+        padding: 20px; 
+        z-index: 1;
+    }
+    .button {
+        width: auto; 
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #9923e7;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0; 
+        text-align: center; 
+        transition: background-color 0.3s ease;
+        font-family: 'Montserrat';
+    }
+    .button-container{
+        position: fixed;
+        gap: 40px;
+        right: 20px;
+    }
+
+    .icon-container {
+        
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+        position: fixed;
+        top: 50%; 
+        right: 250px;
+    }
+    
+    .icon {
+        width: 60px;
+        height: auto;
+        margin: 0; 
+    }
+
+    .container {
+        margin-top: 50px;
+        padding: 0 10px;
+    } 
+} */
+
+.hamburger{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+/* Styles for small screens */
+@media (max-width: 1424px) {
+    .button-icon-container {
+       
+        gap: 10px;
+        padding: 20px;
+        position: relative; /* Keep the container in the natural flow */
+        top: 2%; /* Adjust or remove this value if needed */
+        right: 10%; /* Align the container to the right side */
+        align-items: center; /* Center items vertically */
+    }
+
+    .button-container {
+        width: 400px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .container{
+        align-items: center;
+    }
+    #title{
+        font-size: 2.5rem;
+        letter-spacing: 4.5rem;
+    }
+    .flower-container{
+        bottom: 60px;
+    }
+    /* Add padding to the bottom of the body to ensure the entire content is scrollable */
+    body {
+        padding-bottom: 100px; /* Adjust this value as needed */
+    }
+    /* .navbar_menu {
+        display: none;
+        position: fixed;
+        height: calc(100vh - 90px);
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        flex-direction: column;
+        align-items: flex-start; 
+        overflow-y: auto;
+        padding-top: 30px;
+    }
+
+   
+    .navbar_menu.active {
+        display: flex;
+    }
+    .navbar_link {
+        padding: 30px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%; 
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box; 
+        font-size: 35px;
+    
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw; 
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    .navbar_link:hover {
+        color: transparent;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.3s;
+    }
+    .navbar_link::before {
+        content: '';
+        position: absolute;
+        top: 67px;
+        left: 30px;
+        width: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        transition: width 0.3s;
+    }
+    
+    .navbar_link:hover::before {
+        width: calc(100% - 30px);
+    } */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: rgb(240, 166, 242);
+        font-size: 30px;
+        background-color: black; 
+        padding: 10px; 
+        transition: background-color 0.3s, transform 0.3s; 
+    }
+    .hamburger:hover {
+        background-color: #333; 
+        transform: scale(1.1); 
+    }
+    
+    .close-menu {
+        display: none;
+        cursor: pointer;
+        color: rgb(240, 166, 242);
+        font-size: 30px;
+        display: none; 
+        background-color: black;
+        padding: 10px;
+        top: 10px; 
+        right: 10px; 
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .close-menu:hover {
+        background-color: #333; 
+        transform: scale(1.1); 
+    }
+    
+    /* Hide the hamburger icon and show the close icon when the menu is active */
+    .navbar_menu.active + .hamburger{
+        display: none;
+    }
+    
+    .navbar_menu.active + .close-menu {
+        display: block;
+    }
+    
+    /* Show the menu when active */
+    /* Default styles for navbar menu */
+    .navbar_menu {
+        display: none; /* Hidden by default */
+    }
+    
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex; /* Adjust according to layout needs */
+        flex-direction: column; /* Stack menu items vertically */
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed; /* Fix position for menu */
+        top: 90px; /* Adjust based on navbar height */
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Scroll if content overflows */
+        flex-direction: column;
+        align-items: flex-start; 
+        right: 20px;
+    }
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%; 
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box; 
+        font-size: 35px;
+    
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw; 
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    .navbar_link:hover {
+        color: transparent;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.3s;
+    }
+    .navbar_link::before {
+        content: '';
+        position: absolute;
+        top: 67px;
+        left: 30px;
+        width: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        transition: width 0.3s;
+    }
+    
+    .navbar_link:hover::before {
+        width: calc(100% - 30px);
+    }
+    /* Default state: hide the images */
+    .imgs {
+        display: none;
+    }
+
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 750%; /* Adjust as needed */
+        right: 25%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 200px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+    }
+
+@media (min-width: 1425px) {
+    
+
+    /*add later*/
+}
+
+
+
+
+
 
 #skills {
     position: fixed;
