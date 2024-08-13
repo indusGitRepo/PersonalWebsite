@@ -1,0 +1,298 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(250, 190, 240),rgb(166, 200, 255));
+    display: grid;
+    place-items: center;
+    display: grid;
+}
+.form-wrapper {
+    text-align: center; /* Center the text within the form wrapper */
+}
+
+.form-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: white;
+    align-items: center;
+    letter-spacing: 0.3rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s;
+    text-align: center; 
+}
+.form-subheading {
+    font-family: 'Arial', sans-serif;
+    color: rgb(101, 101, 101);
+    text-align: center; 
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.contact-form-input{
+    width: 60rem;
+    height: 5rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: rgb(242, 242, 242);
+    border: 0.2rem solid rgba(0, 0, 0, 0.086);
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 0.1rem;
+    outline: none;
+    border-radius: 50px;
+}
+.contact-form-input:focus{
+    color: black;
+    border: 0.1rem solid rgb(255, 103, 197);
+}
+.contact-form-input::placeholder{
+    color: rgb(117, 136, 150);
+}
+.contact-form-textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+}
+.form-submit-btn{
+    width: 20rem;
+    height: 5rem;
+    background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.3s;
+    margin-top: 2rem;
+    border: none;
+}
+.form-submit-btn:hover {
+    background: linear-gradient(to right, rgb(181, 181, 181), rgb(101, 101, 101)); /* Gradient on hover */
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* add font after */
+}
+.navbar{
+    background-color: black;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar_link{
+    color: rgb(232, 169, 226);
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    /* add cute cartoon in between each section */
+}
+.navbar_link {
+    position: relative;
+    text-decoration: none; 
+    color: rgb(232, 169, 226); 
+    transition: color 0.3s; 
+}
+
+.navbar_link:hover {
+    color: transparent; 
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    transition: background-image 0.3s; 
+}
+
+.navbar_link::before {
+    content: ''; 
+    position: absolute; 
+    top: 20px; 
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
+    color: black;
+    transition: width 0.3s; 
+}
+
+.navbar_link:hover::before {
+    width: 100%; 
+}
+/* think about what you wanna do with the NEXT logo */
+
+/* .container{
+    position:absolute;
+    top:250px;
+    height:200px;
+    width:200px;
+    right:500px;
+}
+.header-text h1{
+    display: inline;
+    clear:none;
+    margin-top: 50px;
+    font-size: 100px;
+    color: rgb(255, 158, 231);
+    position: relative;
+    left: -1200px;
+    top: -450px;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+/* ul a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    left: -1200px;
+}
+li{
+    list-style-type: none;
+    display:inline-block;
+    margin: 0 10px;
+} */
+/* nav ul li b{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    left: -1000px;
+    top: -20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li c{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    left: -800px;
+    top: -60px;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li d{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    left: -600px;
+    top: -100px;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li e{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    left: -400px;
+    top: -140px;
+    display: inline-block;
+    margin: 0 10px;
+} */
+/* #list li{
+    list-style-type: none;
+} */
+
+/* this is the part of the code which allows you to make the pink underline appear by hovering over the text*/
+/* nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DDA0DD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+} */
+
+/* this is the part of the code which allows you to make the pink underline appear by hovering over the text*/
+/* nav ul li b:hover::after{
+    width: 100%;
+}
+nav ul li b::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DDA0DD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li c:hover::after{
+    width: 100%;
+}
+nav ul li c::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DDA0DD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li d:hover::after{
+    width: 100%;
+}
+nav ul li d::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DDA0DD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li e:hover::after{
+    width: 100%;
+}
+nav ul li e::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DDA0DD;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}  */
+

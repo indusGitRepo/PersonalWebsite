@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="TF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Title of my Website, name this smth else later this name is so lame-->
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="contactStyle.css">
+        <script src="contact.js" defer></script>
+    </head>
+</body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">NEXT</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/Home.html" class="navbar_link">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/AboutMe.html" class="navbar_link">About Me</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Skills.html" class="navbar_link">Skills and Experiences</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Projects.html" class="navbar_link">Projects</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/Contact.html" class="navbar_link">Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2 class="form-heading">Reach Out!</h2>
+            <h3 class="form-subheading">I would love to connect and talk about anything tech related! Feel free to fill in the information below and I will respond!</h3>
+            <!-- <form class="contact-form">
+                <input type="text" 
+                autocomplete="off" 
+                placeholder="Name" 
+                class="contact-form-input">
+                <input type="email" 
+                autocomplete="off" 
+                placeholder="Email" 
+                class="contact-form-input">
+                <input type="text" 
+                autocomplete="off" 
+                placeholder="Subject" 
+                class="contact-form-input">
+                <textarea class="contact-form-input
+                contact-form-textarea" 
+                placeholder="Message"></textarea>
+                <input type="submit"
+                class="form-submit-btn" value="Send
+                Request">
+            </form> -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" action="email.php" method="POST">
+                <input type="hidden" name="access_key" value="ec69c13b-4879-4390-afcc-f5c4b9fb3810">
+                <input type="text" name="name" autocomplete="off" placeholder="Name" class="contact-form-input">
+                <input type="email" name="email" autocomplete="off" placeholder="Email" class="contact-form-input">
+                <input type="text" name="subject" autocomplete="off" placeholder="Subject" class="contact-form-input">
+                <textarea name="message" class="contact-form-input contact-form-textarea" placeholder="Message"></textarea>
+                <input type="submit" class="form-submit-btn" value="Send Request">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+

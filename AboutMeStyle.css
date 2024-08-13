@@ -1,0 +1,604 @@
+body {
+    /* background: radial-gradient(circle at 190% 50%, rgb(227, 172, 240), rgba(164, 103, 244, 0.478) 50%, rgba(241, 129, 253, 0.795) 75%, rgb(242, 197, 238) 90%); */
+    background: radial-gradient(circle at 100%, rgb(252, 252, 252), rgba(250, 79, 193, 0.478) 50%, rgb(255, 255, 255) 75%, rgb(57, 2, 99) 100%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: black;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar_link{
+    color: rgb(232, 169, 226);
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar_link {
+    position: relative;
+    text-decoration: none; 
+    color: rgb(232, 169, 226); 
+    transition: color 0.3s; 
+}
+
+.navbar_link:hover {
+    color: transparent; 
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    transition: background-image 0.3s; 
+}
+
+.navbar_link::before {
+    content: ''; 
+    position: absolute; 
+    top: 20px; 
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228)); 
+    color: black;
+    transition: width 0.3s; 
+}
+
+.navbar_link:hover::before {
+    width: 100%; 
+}
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 10px; /* Adjust the gap between images */
+    max-width: 700px; /* Set a maximum width for the grid */
+    margin: 400px 200px; /* Center the grid */
+    min-width: 300px; 
+    align-items: center;
+}
+
+
+.photos #frens, #GCG24, #GCG23 {
+    width: 100%; /* Make images fill their grid cells */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the grid cell */
+    border-radius: 1rem;
+    border: 5px solid #000; /* Black solid border with 5px width */
+    border-radius: 10px;
+    
+}
+#frens:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#GCG24:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#GCG23:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#nature:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#nature{
+    width: 100%; /* Make images fill their grid cells */
+    height: 455px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 5px solid rgb(0, 0, 0); /* Black solid border with 5px width */
+    border-radius: 10px;
+}
+.pop-image {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pop-image.clicked {
+    transform: scale(1.5); /* Enlarge the image */
+    z-index: 1000; /* Bring it above other elements */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
+}
+.image-grid img {
+    width: 100%; /* Make images fill their grid cells */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the grid cell */
+}
+.colorful-textbox {
+    width: 400px; /* Set the width of the textbox */
+    padding: 40px; /* Add some padding inside the textbox */
+    background-color: #6581de; /* Set the background color */
+    color: white; /* Set the text color */
+    font-size: 18px; /* Adjust the font size */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); /* Optional: Add a shadow for depth */
+    text-align: center; /* Optional: Center the text */
+    margin: -1000px 70%; /* Optional: Center the textbox on the page */
+    font-family: 'Montserrat';
+}
+#animation {
+    animation: photo-animation 3s infinite;
+    width: 550px;
+    position: absolute; /* Position relative to the parent container */
+    top: 45%; /* Adjust as needed */
+    margin-left: 0px;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+}
+.button-container {
+    margin-top: 1rem;
+}
+
+/* Optional: Absolute positioning for precise control */
+.button-container1 {
+    position: relative; /* Ensure the container positions the button relative to itself */
+    position: absolute; /* Use absolute positioning for free placement */
+    top: 90%;
+    margin-left: 300px;
+    transform: translateX(-50%); /* Center the container horizontally */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#showImage{
+    font-family: 'Courier New', Courier, monospace;
+    width: 20rem;
+    height: 5rem;
+    background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.3s;
+    margin-left:7rem;
+    border: none;
+}
+#showImage:hover {
+    background: linear-gradient(to right, rgb(181, 181, 181), rgb(101, 101, 101));
+}
+#stop{
+    font-family: 'Courier New', Courier, monospace;
+    width: 20rem;
+    height: 5rem;
+    background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.3s;
+    border: none;
+}
+#stop:hover{
+    background: red;
+}
+#showImage:hover {
+    background: linear-gradient(to right, rgb(181, 181, 181), rgb(101, 101, 101));
+}
+#title {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if height is set) */
+    text-align: center; /* Center text within the flex container */
+    font-family: 'Noto Sans Mon';
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    color: rgb(21, 3, 43);
+    font-weight: 400;
+    font-size: 4.8rem;
+    margin-top: 100px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 100px;
+    gap: 60px;
+    padding: 0 70px;
+}
+#para{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 50%; 
+    text-align: center; /* Center the text within the element */
+    white-space: normal; /* Allow text wrapping */
+    font-size: 23px;
+    font-family: 'Noto Sans Mon';
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    word-wrap: break-word;
+}
+#para2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 50%; 
+    text-align: center; /* Center the text within the element */
+    white-space: normal; /* Allow text wrapping */
+    font-size: 23px;
+    font-family: 'Noto Sans Mon';
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    word-wrap: break-word;
+}
+#para3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 50%; 
+    text-align: center; /* Center the text within the element */
+    white-space: normal; /* Allow text wrapping */
+    font-size: 23px;
+    font-family: 'Noto Sans Mon';
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    word-wrap: break-word;
+}
+body {
+    background-color: rgb(164, 150, 165);
+    position: relative; /* Ensure stars are positioned relative to the body */
+    
+}
+.stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Constrain stars to the viewport */
+    overflow: hidden; /* Prevent stars from affecting layout */
+    pointer-events: none; /* Prevent interference with other elements */
+    z-index: 0; /* Ensure stars are behind other elements */
+}
+.star {
+    position: absolute;
+    color: #fff; /* White color */
+    font-size: 24px; /* Adjust size as needed */
+    z-index: 1000; /* Ensure stars are above other elements */
+    animation: animate 5s linear infinite;
+    top: 600px;
+}
+
+.star::before {
+    content: '\f005'; /* Font Awesome star character */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome font family */
+    font-weight: 900; /* Solid icon weight */
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 20px #fff;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(calc(-360px)) rotate(0deg); /* Start above the viewport */
+    }
+    100% {
+        transform: translateY(45vh) rotate(360deg);/* Move down the full viewport height */
+        opacity: 50%;
+    }
+}
+
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+body {
+    
+    position: relative;
+    padding-bottom: 100px;
+}
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Make sure it's above the navbar */
+     /* Add some padding if needed */
+}
+
+.logo {
+    height: 90px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+.imgs {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.imgs img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: black;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    height: 90px;
+    padding: 0 40px;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    width: 100%;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_link {
+    color: rgb(232, 169, 226);
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    position: relative; /* Ensure relative positioning for pseudo-elements */
+    transition: color 0.3s;
+}
+
+.navbar_link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-image 0.3s;
+}
+
+.navbar_link::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+    transition: width 0.3s;
+}
+
+.navbar_link:hover::before {
+    width: 100%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+/* Styles for small screens */
+@media (max-width: 1444px) {
+    .button-container1{
+        position: relative; /* Keep the container in the natural flow */
+        top: 20%; /* Adjust or remove this value if needed */
+        align-items: center; /* Center items vertically */
+    }
+    #animation{
+        position: relative; /* Keep the container in the natural flow */
+        top: 5%; /* Adjust or remove this value if needed */
+        align-items: center; /* Center items vertically */
+    }
+    .colorful-textbox {
+        position: relative; /* Keep it in the document flow */
+        
+        top: auto; /* Remove any specific 'top' value */
+        margin: 20px auto; /* Center it below the photos section */
+        width: 90%; /* Adjust width to fit better on smaller screens */
+        max-width: 400px; /* Ensure it doesn't get too wide */
+    }
+    .photos {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-rows: auto;   /* Auto height for rows */
+        align-items: center;  
+    }
+    .container{
+        align-items: center;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: rgb(240, 166, 242);
+        font-size: 30px;
+        background-color: black; 
+        padding: 10px; 
+        transition: background-color 0.3s, transform 0.3s; 
+    }
+    .hamburger:hover {
+        background-color: #333; 
+        transform: scale(1.1); 
+    }
+    
+    .close-menu {
+        display: none;
+        cursor: pointer;
+        color: rgb(240, 166, 242);
+        font-size: 30px;
+        display: none; 
+        background-color: black;
+        padding: 10px;
+        top: 10px; 
+        right: 10px; 
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .close-menu:hover {
+        background-color: #333; 
+        transform: scale(1.1); 
+    }
+    
+    /* Hide the hamburger icon and show the close icon when the menu is active */
+    .navbar_menu.active + .hamburger{
+        display: none;
+    }
+    
+    .navbar_menu.active + .close-menu {
+        display: block;
+    }
+    
+    /* Show the menu when active */
+    /* Default styles for navbar menu */
+    .navbar_menu {
+        display: none; /* Hidden by default */
+    }
+    
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex; /* Adjust according to layout needs */
+        flex-direction: column; /* Stack menu items vertically */
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed; /* Fix position for menu */
+        top: 90px; /* Adjust based on navbar height */
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Scroll if content overflows */
+        flex-direction: column;
+        align-items: flex-start; 
+        right: 20px;
+    }
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%; 
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box; 
+        font-size: 35px;
+    
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw; 
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    .navbar_link:hover {
+        color: transparent;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.3s;
+    }
+    .navbar_link::before {
+        content: '';
+        position: absolute;
+        top: 67px;
+        left: 30px;
+        width: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        transition: width 0.3s;
+    }
+    
+    .navbar_link:hover::before {
+        width: calc(100% - 30px);
+    }
+    /* Default state: hide the images */
+    .imgs {
+        display: none;
+    }
+
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 750%; /* Adjust as needed */
+        right: 25%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 200px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+    }
+
+@media (max-height: 700px) {
+    #button-container {
+        margin-top: 20px; /* Increase the margin-top to prevent overlap */
+        width: 50px;
+    }
+    
+    #animation {
+        top: 30%; /* Adjust top to avoid overlap */
+        width: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
