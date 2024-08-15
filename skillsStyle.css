@@ -102,11 +102,33 @@ body {
     width: 100%;
 }
 #nutreco{
-    width: 200px;
+    width: 520px;
     height: auto;
-    top: 10px;
 }
 
+#Amino{
+    width: 800px;
+    height: auto;
+    margin-left: 50%;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787);
+}
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 90px; /* Space between buttons */
+    margin-top: -9%;
+    margin-left: 18%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: -3px 3px 8px #f8b8f6;
+}
+.logos {
+    display: flex;
+    flex-direction: column; /* Stacks icons vertically */
+    gap: 60px; /* Space between icons */
+    margin-left: -100px;
+}
 .subtitle {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
@@ -137,7 +159,7 @@ body {
     display: flex;
     flex-direction: column;
    
-    margin-top: 100px;
+    margin-top: 150px;
     gap: 60px;
     padding: 0 20px;
 }
@@ -157,9 +179,9 @@ body {
     color: rgb(51, 42, 63);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3rem;
-    margin: 120px auto; /* Center horizontally and adjust top and bottom margins */
+    margin: 125px auto; /* Center horizontally and adjust top and bottom margins */
     word-wrap: break-word;
-    max-width: 50%;
+    max-width: 60%;
     text-indent: 20px;
     text-align: center; /* Center text within the element */
 }
