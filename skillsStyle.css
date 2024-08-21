@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     overflow-y: auto;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -105,11 +106,166 @@ body {
     width: 520px;
     height: auto;
 }
+#skillLogo{
+    width: 130px;
+    height: auto;
+}
+table {
+    width: 60%;
+    border-collapse: collapse; 
+    margin: 150px auto;
+    border-radius: 12px;   
+    overflow: hidden;         
+    box-shadow: 04px8pxrgba(0, 0, 0, 0.1);
+    
+}
 
-#Amino{
+th, td {
+    padding: 12px;          
+    text-align: center;  
+         
+}
+
+tr:nth-child(odd) {
+    background-color: #e8e6e6; /* Light grey for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+
+
+table, th, td {
+    border: none;             
+}
+#details{
+    text-align: left;
+    font-family: 'Montserrat';
+}
+#sec{
+    font-family: 'Montserrat';
+}
+#main {
+    background-color: #eac5f8;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-areas:
+        "top top""bottom1 bottom2"; /* Define areas for bottom images */
+        gap: 20px; /* Adjust the space between items */
+        max-width: 800px; /* Set a maximum width for the grid */
+        margin: 0 8%; /* Center the grid */
+    justify-items: center;
+}
+/* Top image */.Amino {
+    grid-area: top; /* Position in the top area */width: 100%; /* Adjust width as needed */
+}
+/* Bottom images */.Excel {
+    grid-area: bottom1; /* Position in the bottom left area */width: 100%; /* Adjust width as needed */
+}
+.AminoFlock { 
+    grid-area: bottom2; 
+    width: 100%; /
+}
+.Amino{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AminoFlock{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: -15%;
+}
+.Excel{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#Amino {
     width: 800px;
     height: auto;
-    margin-left: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787);
+}
+#Excel{
+    width: 800px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787);
+}
+.Amino, .Excel, .AminoFlock {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Excel.clicked{
+    transform: scale(1.2); /* Adjust the scale value as needed */
+    z-index: 1000; /* Bring the image above other elements */
+    transform-origin: left center;
+    box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
+}
+.Amino.clicked{
+    transform: scale(1.2); /* Adjust the scale value as needed */
+    z-index: 1000; /* Bring the image above other elements */
+    box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
+}
+.AminoFlock.clicked {
+    transform: scale(1.2); /* Adjust the scale value as needed */
+    z-index: 1000; /* Bring the image above other elements */
+    transform-origin: right center;
+    box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
+}
+.txtBoxContainer {
+    display: flex;
+    margin: 20px0;
+    gap: 12%;
+    position: relative;
+}
+
+.Exceltextbox {
+    width: 800px; /* Set the width of the textbox */
+    padding: 40px; /* Add some padding inside the textbox */
+    background-color: #b5e4ff; /* Set the background color */
+    color: rgb(153, 75, 255); /* Set the text color */
+    font-size: 18px; /* Adjust the font size */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); /* Optional: Add a shadow for depth */
+    text-align: center; /* Optional: Center the text */
+    font-family: 'Montserrat';
+    position: relative;
+    margin-left: 10%;
+    
+}
+.Aminotextbox {
+    width: 800px; /* Set the width of the textbox */
+    padding: 40px; /* Add some padding inside the textbox */
+    background-color: #b5e4ff; /* Set the background color */
+    color: rgb(153, 75, 255); /* Set the text color */
+    font-size: 18px; /* Adjust the font size */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); /* Optional: Add a shadow for depth */
+    text-align: center; /* Optional: Center the text */
+    font-family: 'Montserrat';
+    position: relative;
+    margin-right: 10%;
+    
+}
+#AminoFlock{
+    width: 800px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787);
 }
 .jobs {
@@ -123,11 +279,27 @@ body {
     color: white;
     text-shadow: -3px 3px 8px #f8b8f6;
 }
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 90px; /* Space between buttons */
+    margin-top: 9%;
+    margin-left: 18%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: -3px 3px 8px #f8b8f6;
+}
 .logos {
     display: flex;
     flex-direction: column; /* Stacks icons vertically */
     gap: 60px; /* Space between icons */
     margin-left: -100px;
+}
+.skillsLogo{
+    display: flex;
+    margin-left: 90px;
+    margin-top: -90px;
 }
 .subtitle {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -158,7 +330,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-   
+    overflow: hidden;
     margin-top: 150px;
     gap: 60px;
     padding: 0 20px;
@@ -331,7 +503,16 @@ body {
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
     }
+    #Amino{
+        width: 600px;
     }
+    .skillsLogo{
+        display: none;
+    }
+    #nutreco{
+        display: none;
+    }
+}
 
 @media (min-width: 1425px) {
     
