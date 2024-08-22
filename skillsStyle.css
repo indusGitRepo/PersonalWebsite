@@ -163,6 +163,7 @@ table, th, td {
         max-width: 800px; /* Set a maximum width for the grid */
         margin: 0 8%; /* Center the grid */
     justify-items: center;
+    
 }
 /* Top image */.Amino {
     grid-area: top; /* Position in the top area */width: 100%; /* Adjust width as needed */
@@ -172,7 +173,7 @@ table, th, td {
 }
 .AminoFlock { 
     grid-area: bottom2; 
-    width: 100%; /
+    width: 100%; 
 }
 .Amino{
     display: flex;
@@ -190,12 +191,22 @@ table, th, td {
     align-items: flex-start;
     justify-content: flex-start;
 }
+#Amino:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#AminoFlock:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#Excel:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
 #Amino {
     width: 800px;
     height: auto;
     align-items: center;
     justify-content: center;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787);
+    
 }
 #Excel{
     width: 800px;
@@ -212,7 +223,6 @@ table, th, td {
 .Excel.clicked{
     transform: scale(1.2); /* Adjust the scale value as needed */
     z-index: 1000; /* Bring the image above other elements */
-    transform-origin: left center;
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
 }
 .Amino.clicked{
@@ -223,7 +233,6 @@ table, th, td {
 .AminoFlock.clicked {
     transform: scale(1.2); /* Adjust the scale value as needed */
     z-index: 1000; /* Bring the image above other elements */
-    transform-origin: right center;
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
 }
 .txtBoxContainer {
@@ -378,6 +387,8 @@ table, th, td {
     body {
         padding-bottom: 100px; /* Adjust this value as needed */
     }
+    
+    
     .hamburger {
         display: block;
         cursor: pointer;
@@ -503,9 +514,7 @@ table, th, td {
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
     }
-    #Amino{
-        width: 600px;
-    }
+    
     .skillsLogo{
         display: none;
     }
@@ -513,9 +522,48 @@ table, th, td {
         display: none;
     }
 }
+@media (max-width: 900px) {
+    #AminoFlock{
+        max-width: 500px;
+        margin-left: 37%;
+        margin-top: 15%;
+    }
+    #Excel{
+        max-width: 500px;
+        margin-left: 4%;
+    }
+    #Amino{
+        max-width: 500px;
+        margin-left: 5%;
+    }
+    .photos {
+        display: flex;
+        align-items: center; 
+        flex-direction: column; 
+        gap: 20px;
+    }
 
-@media (min-width: 1425px) {
+    .photosimg {
+        width: 100%;
+        max-width: 300px;    
+        object-fit: cover;    
+    }
+}
+@media (max-width: 1800px) {
+    #AminoFlock{
+        margin-top: 15%;
+    }
     
+    .photos {
+        display: flex;
+        align-items: center; 
+        flex-direction: column; 
+        gap: 20px;
+    }
 
-    /*add later*/
+    .photosimg {
+        width: 100%;
+        max-width: 300px;    
+        object-fit: cover;    
+    }
 }
