@@ -28,7 +28,7 @@ body {
 }
 .imgs {
     display: flex;
-    gap: 10px; /* Space between icons */
+    gap: 15px; /* Space between icons */
 }
 
 .imgs img {
@@ -74,7 +74,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 1.3rem;
     height: 100%;
     position: relative; /* Ensure relative positioning for pseudo-elements */
     transition: color 0.3s;
@@ -357,8 +357,8 @@ table, th, td {
 }
 
 #para1 {
-    color: rgb(51, 42, 63);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 0, 37);
+    font-family: 'Open Sans';
     font-size: 1.3rem;
     margin: 125px auto; /* Center horizontally and adjust top and bottom margins */
     word-wrap: break-word;

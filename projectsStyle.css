@@ -27,7 +27,7 @@ body {
 }
 .imgs {
     display: flex;
-    gap: 10px; /* Space between icons */
+    gap: 15px; /* Space between icons */
 }
 
 .imgs img {
@@ -73,7 +73,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 1.3rem;
     height: 100%;
     position: relative; /* Ensure relative positioning for pseudo-elements */
     transition: color 0.3s;
