@@ -319,6 +319,204 @@ table, th, td {
     color: #272626;
     text-shadow: 2px 2px 2px white;
 }
+.con{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-top: -10%;
+    transition: color 0.3s;
+    font-size: 2.3rem;
+    color: #272626;
+    text-shadow: 2px 2px 2px white;
+}
+.goals{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20%;
+    transition: color 0.3s;
+    font-size: 2.3rem;
+    color: #272626;
+    text-shadow: 2px 2px 2px white;
+    margin-top: 8%;
+}
+.colorful-textbox {
+    max-width: 3000px; /* Set the width of the textbox */
+    text-align: center;
+    padding: 40px; /* Add some padding inside the textbox */
+    background-color: #ffffff; /* Set the background color */
+    color: rgb(0, 0, 0); /* Set the text color */
+    font-family: 'Montserrat';
+    font-size: 40px; /* Adjust the font size */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 8px 40px rgba(243, 150, 241, 0.787); /* Optional: Add a shadow for depth */
+    text-align: center; /* Optional: Center the text */
+    margin-top: 15%;
+}
+.flowchart-goals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: none;
+    padding: 20px;
+    margin-top: 30%;
+    margin-left: -40%;
+}
+
+.node {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+    position: relative;
+    margin-left: -3%;
+    text-indent: 30px;
+}
+#tech{
+    width: 80px;
+    margin-left: 3%;
+}
+#text{
+    width: 70px;
+    margin-left: 4%;
+}
+#star{
+    width: 70px;
+    margin-left: 3%;
+}
+#globe{
+    width: 70px;
+    margin-left: 3%;
+}
+#thinking{
+    width: 70px;
+    margin-left: 3%;
+}
+.square {
+    width: 550px;
+    height: 100px;
+    background-color: #9ac2ff;
+}
+.circle {
+    width: 350px; /* Set the width of the circle */
+    height: 350px; /* Set the height of the circle */
+    background-color: #ffb8ee; /* Set the background color */
+    border-radius: 50%;
+    top: -90px; 
+    right: -155%;
+    z-index: 1;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding inside the circle */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    text-align: center; /* Center text within the circle */
+    overflow: hidden; /* Prevent text from overflowing the circle */
+}
+.disclaimer{
+    color: rgb(148, 5, 5);
+    margin-top: 10%;
+}
+#action {
+    list-style: none;
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center;
+    margin: 0; /* Remove default list margin */
+    padding: 0; /* Remove default list padding */
+    word-wrap: break-word; /* Ensure the text wraps if it’s too long */
+}
+.sqr{
+    width: 300px;
+    height: 300px;
+    background-color: #ffcb9a;
+    top: -360px; 
+    right: -255%;
+}
+
+.connector {
+    width: 300px; /* Length of the horizontal line */
+    height: 3px; /* Thickness of the line */
+    background-color: rgb(60, 60, 60);
+    margin: 0 auto; /* Center the line horizontally */
+    position: relative; /* To position the arrow relative to the line */
+    top: -10px; 
+    right: -100%;
+    transform: translate3d(-50%, -50%, 0) rotate(20deg);
+}
+
+.connector::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid rgb(60, 60, 60); /* Arrow pointing to the right */
+    position: absolute;
+    right: -10px; /* Position the arrow at the end of the line */
+    transform: translateY(-40%); /* Adjust to perfectly center vertically */
+}
+.connector2 {
+    width: 260px; /* Length of the horizontal line */
+    height: 3px; /* Thickness of the line */
+    background-color: rgb(60, 60, 60);
+    margin: 0 auto; /* Center the line horizontally */
+    position: relative; /* To position the arrow relative to the line */
+    top: -250px; 
+    right: -175%;
+}
+
+.connector2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid rgb(60, 60, 60); /* Arrow pointing to the right */
+    position: absolute;
+    right: -10px; /* Position the arrow at the end of the line */
+    transform: translateY(-40%); /* Adjust to perfectly center vertically */
+}
+#folder {
+    width: 80px;
+    height: auto;
+    margin-left: 100%;
+    margin-top: -15%;
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+#folder:hover {
+    box-shadow: 10px 15px 15px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255); /* Increase shadow size and add glow */
+    transform: scale(1.1); /* Slightly increase size */
+}
+
+
+
+
+
+
+
+
+
+/* .connector {
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.connector::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #000;
+    margin: 0 auto;
+} */
 
 
 
@@ -346,8 +544,8 @@ table, th, td {
 }
 
 #para, #para2, #para3, #para4 {
-    color: rgb(51, 42, 63);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 0, 37);
+    font-family: 'Open Sans';
     font-size: 1.3rem;
     margin: 10px 0;
     margin-left: 25%;
@@ -382,6 +580,7 @@ table, th, td {
 }
 /* Styles for small screens */
 @media (max-width: 1424px) {
+
    
     /* Add padding to the bottom of the body to ensure the entire content is scrollable */
     body {
@@ -567,3 +766,83 @@ table, th, td {
         object-fit: cover;    
     }
 }
+@media (max-width: 1850px) {
+    .connector{
+        display: none;
+    }
+    .connector2{
+        display: none;
+    }
+    .flowchart-goals {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        margin-top: 30%;
+        margin-left: -40%;
+    }
+    
+    .node {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 1000;
+        font-size: 15px;
+        position: relative;
+        margin-left: -3%;
+        text-indent: 30px;
+    }
+    #tech{
+        width: 80px;
+        margin-left: 3%;
+    }
+    #text{
+        width: 70px;
+        margin-left: 4%;
+    }
+    #star{
+        width: 70px;
+        margin-left: 3%;
+    }
+    #globe{
+        width: 70px;
+        margin-left: 3%;
+    }
+    #thinking{
+        width: 70px;
+        margin-left: 3%;
+    }
+
+
+    .circle {
+        top: 120px; 
+        right: -15%;
+    }
+
+    .sqr {
+        top: 120px; 
+        right: -15%;
+    }
+    .square {
+        top: 40px; /* Increase this value to move the squares further down */
+        right: -15%;
+        width: 300px;
+    }
+    .con{
+        margin-top: 10%;
+    }
+
+    .disclaimer{
+        color: rgb(148, 5, 5);
+        margin-top: 10%;
+    }
+    #action {
+        list-style: none;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+    }
+}
+
