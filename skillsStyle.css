@@ -323,7 +323,7 @@ table, th, td {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     margin-left: 20%;
-    margin-top: -10%;
+    margin-top: -20%;
     transition: color 0.3s;
     font-size: 2.3rem;
     color: #272626;
@@ -356,7 +356,7 @@ table, th, td {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: none;
+    gap: 0px;
     padding: 20px;
     margin-top: 30%;
     margin-left: -40%;
@@ -371,6 +371,7 @@ table, th, td {
     position: relative;
     margin-left: -3%;
     text-indent: 30px;
+    text-align: center;
 }
 #tech{
     width: 80px;
@@ -396,23 +397,9 @@ table, th, td {
     width: 550px;
     height: 100px;
     background-color: #9ac2ff;
-}
-.circle {
-    width: 350px; /* Set the width of the circle */
-    height: 350px; /* Set the height of the circle */
-    background-color: #ffb8ee; /* Set the background color */
-    border-radius: 50%;
-    top: -90px; 
-    right: -155%;
     z-index: 1;
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 20px; /* Add padding inside the circle */
-    box-sizing: border-box; /* Ensure padding is included in the width/height */
-    text-align: center; /* Center text within the circle */
-    overflow: hidden; /* Prevent text from overflowing the circle */
 }
+
 .disclaimer{
     color: rgb(148, 5, 5);
     margin-top: 10%;
@@ -425,13 +412,34 @@ table, th, td {
     padding: 0; /* Remove default list padding */
     word-wrap: break-word; /* Ensure the text wraps if it’s too long */
 }
-.sqr{
-    width: 300px;
-    height: 300px;
+.sqr {
+    width: 360px;
+    height: 360px;
     background-color: #ffcb9a;
-    top: -360px; 
+    position: relative;
+    top: -560px; /* Reduced from -530px to bring closer */
     right: -255%;
 }
+
+.circle {
+    width: 350px;
+    height: 350px;
+    background-color: #f8a4e4;
+    border-radius: 50%;
+    position: relative;
+    top: -220px; /* Adjusted from -200px to bring closer to the square */
+    right: -155%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+
 
 .connector {
     width: 300px; /* Length of the horizontal line */
@@ -439,9 +447,9 @@ table, th, td {
     background-color: rgb(60, 60, 60);
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
-    top: -10px; 
+    top: -50px; 
     right: -100%;
-    transform: translate3d(-50%, -50%, 0) rotate(20deg);
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
 }
 
 .connector::after {
@@ -462,7 +470,7 @@ table, th, td {
     background-color: rgb(60, 60, 60);
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
-    top: -250px; 
+    top: -400px; 
     right: -175%;
 }
 

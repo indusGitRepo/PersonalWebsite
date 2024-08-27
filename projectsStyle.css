@@ -104,14 +104,20 @@ body {
 #pool{
     width: 100px;
     height: auto;
+    margin-top: -100px;
+    margin-left: -180px;
 }
 #mancala{
     width: 100px;
     height: auto;
+    margin-top: -100px;
+    margin-left: -180px;
 }
 #web{
     width: 100px;
     height: auto;
+    margin-top: -100px;
+    margin-left: -180px;
 }
 #skillLogo{
     width: 130px;
@@ -166,13 +172,24 @@ table, th, td {
 .jobs {
     display: flex;
     flex-direction: column;
-    gap: 90px; /* Space between buttons */
-    margin-top: -4.5%;
+    gap: 200px; /* Space between buttons */
+    margin-top: 10%;
     margin-left: 28%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2.2rem;
     color: rgb(218, 235, 255);
     text-shadow: -3px 3px 8px #0003ca;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 200px; /* Space between buttons */
+    margin-top: 10%;
+    margin-left: 28%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: rgb(218, 235, 255);
 }
 .skills{
     display: flex;
@@ -199,12 +216,52 @@ table, th, td {
 .subtitle {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    margin-left: 20%;
     transition: color 0.3s;
+    margin-top: 10%;
     font-size: 2.3rem;
     color: #272626;
     text-shadow: 2px 2px 2px white;
 }
+.langIcons {
+    position: relative;
+    width: 200px; /* Width of the circle */
+    height: 200px; /* Height of the circle */
+    border-radius: 50%; /* Make the container a circle */
+    margin: auto;
+    margin-left: 30%;
+}
+
+.icon {
+    position: absolute;
+    width: 70px; 
+    height: 70px; 
+}
+
+/* Positioning each icon around the circle */
+#C {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(90px) rotate(0deg);
+}
+
+#Python {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg) translateX(90px) rotate(-90deg);
+}
+
+#SQL {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg) translateX(90px) rotate(-180deg);
+}
+
+#HTMLCSSJS {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg) translateX(90px) rotate(-270deg);
+}
+
 
 
 
@@ -222,29 +279,23 @@ table, th, td {
 }
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-   
-    margin-top: 150px;
-    gap: 60px;
-    padding: 0 20px;
-}
 
 #para, #para2, #para3, #para4 {
-    color: rgb(51, 42, 63);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 0, 118);
+    font-family: 'Open Sans';
     font-size: 1.3rem;
-    margin: 10px 0;
-    margin-left: 25%;
     word-wrap: break-word;
-    max-width: 50%;
-    text-indent: 60px;
+    max-width: 40%;
+    text-indent: 0;
+    text-shadow: none;
+    margin-left: 10%; 
+    top: 80px; 
 }
 
+
 #para1 {
-    color: rgb(51, 42, 63);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 0, 118);
+    font-family: 'Open Sans';
     font-size: 1.3rem;
     margin: 125px auto; /* Center horizontally and adjust top and bottom margins */
     word-wrap: break-word;
