@@ -150,21 +150,44 @@ tr:nth-child(even) {
 
 
 table, th, td {
-    border: none;             
+    border: none;  
+    align-items: center;           
+}
+table td, table th {
+    box-shadow: none; 
+    text-shadow: none; 
 }
 #details{
     text-align: left;
     font-family: 'Montserrat';
-}
-#sec{
-    font-family: 'Montserrat';
-}
-#main {
-    background-color: #eac5f8;
-    text-align: center;
-    font-weight: bold;
+    color: black;
     font-size: 1.3rem;
 }
+#sec{
+    background-color: #000f67;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#folder {
+    width: 80px;
+    height: auto;
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    margin-left: 20%;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+#folder:hover {
+    box-shadow: 10px 15px 15px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255); /* Increase shadow size and add glow */
+    transform: scale(1.1); /* Slightly increase size */
+}
+#test{
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 7%;
+}
+
 
 
 
@@ -235,9 +258,15 @@ table, th, td {
     position: absolute;
     width: 70px; 
     height: 70px; 
+    margin-top: 15%;
 }
-
-/* Positioning each icon around the circle */
+.icon2 {
+    position: absolute;
+    width: 70px; 
+    height: 70px; 
+    margin-top: 15%;
+}
+/* Positioning each icon around the pentagon */
 #C {
     top: 50%;
     left: 50%;
@@ -247,23 +276,63 @@ table, th, td {
 #Python {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg) translateX(90px) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(72deg) translateX(90px) rotate(-72deg);
 }
 
 #SQL {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(180deg) translateX(90px) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(144deg) translateX(90px) rotate(-144deg);
 }
 
 #HTMLCSSJS {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(270deg) translateX(90px) rotate(-270deg);
+    transform: translate(-50%, -50%) rotate(216deg) translateX(90px) rotate(-216deg);
 }
 
+#git {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(288deg) translateX(90px) rotate(-288deg);
+}
+#git2, #Java, #Docker {
+    position: absolute;
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+}
 
+#git2 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+#Java {
+    bottom: 0;
+    left: 0;
+}
+
+#Docker {
+    bottom: 0;
+    right: 0;
+}
+#Check{
+    width: 40px;
+    height: 40px;
+    margin-left: 2%;
+}
+#imp{
+    margin-left: 15%;
+    margin-top: -7%;
+    max-width: 80%;
+}
+#Pin{
+    width: 40px;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 2%;
+}
 
 #header {
     display: flex;
@@ -285,11 +354,11 @@ table, th, td {
     font-family: 'Open Sans';
     font-size: 1.3rem;
     word-wrap: break-word;
-    max-width: 40%;
-    text-indent: 0;
+    max-width: 80%;
+    text-indent: 7%;
     text-shadow: none;
-    margin-left: 10%; 
-    top: 80px; 
+    margin-left: -10%; 
+    margin-top: 7%; 
 }
 
 
@@ -317,6 +386,10 @@ table, th, td {
 .close-menu{
     display: none;
 }
+.mancalaGame, .webGame{
+    margin-top: -7%;
+}
+
 /* Styles for small screens */
 @media (max-width: 1424px) {
    

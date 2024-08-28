@@ -1,119 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="TF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Skills and Experiences</title>
-        <link rel="stylesheet" href="projectsStyle.css">
-        <script src="skills.js" defer></script>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans Mono">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans">
-    </head>
-</body>
+    <title>Skills and Experiences</title>
+    <link rel="stylesheet" href="projectsStyle.css">
+    <script src="skills.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+</head>
+<body>
     <div class="logo-container">
         <a href="Home.html">
             <img src="images/logo.png" alt="Logo" class="logo">
         </a>
     </div>
+
     <nav class="navbar">
         <div class="navbar_container">
-            
-                <div class="hamburger" onclick="toggleClass()">
-                    <h1>&#9776;</h1>
-                </div>
-                
-                <div class="close-menu" onclick="X()">
-                    <h1>&#10005;</h1>
-                </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="/Home.html" class="navbar_link">Home</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="/AboutMe.html" class="navbar_link">About Me</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="/Skills.html" class="navbar_link">Skills and Experiences</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="/Projects.html" class="navbar_link">Projects</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="/Contact.html" class="navbar_link">Contact</a>
-                    </li>
-                </ul>
-                <div class="imgs">
-                        
-                    <a href="https://www.linkedin.com/in/inderjeet-gill03/" target="_blank" class="img">
-                        <img src="images/navIcon.png" alt="cv icon" id="iconCV">
-                    </a>
-                    <a href="pdf/Resume.pdf" target="_blank" class="res">
-                        <img src="images/curriculum-vitae.png" alt="cv icon" id="img">
-                    </a>
-                    <a href="https://github.com/indusGitRepo" target="_blank" class="img">
-                        <img src="images/github.png" alt="cv icon" id="iconCV">
-                    </a>
-                </div>
-                
-            
+            <div class="hamburger" onclick="toggleClass()">
+                <h1>&#9776;</h1>
+            </div>
+            <div class="close-menu" onclick="X()">
+                <h1>&#10005;</h1>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="/Home.html" class="navbar_link">Home</a></li>
+                <li class="navbar_item"><a href="/AboutMe.html" class="navbar_link">About Me</a></li>
+                <li class="navbar_item"><a href="/Skills.html" class="navbar_link">Skills and Experiences</a></li>
+                <li class="navbar_item"><a href="/Projects.html" class="navbar_link">Projects</a></li>
+                <li class="navbar_item"><a href="/Contact.html" class="navbar_link">Contact</a></li>
+            </ul>
+            <div class="imgs">
+                <a href="https://www.linkedin.com/in/inderjeet-gill03/" target="_blank" class="img">
+                    <img src="images/navIcon.png" alt="LinkedIn icon" id="iconCV">
+                </a>
+                <a href="pdf/Resume.pdf" target="_blank" class="res">
+                    <img src="images/curriculum-vitae.png" alt="Resume icon" id="img">
+                </a>
+                <a href="https://github.com/indusGitRepo" target="_blank" class="img">
+                    <img src="images/github.png" alt="GitHub icon" id="iconCV">
+                </a>
+            </div>
         </div>
     </nav>
-    
-        
-        <h2 id="header">Projects</h2>
-        <p id="para1">On this page are a few projects I have enjoyed completing! All projects listed are on my git linked on this website.</p>
-       
-            
-            <div class="jobs">
-                <div class="poolGame">
-                    <h2 id="job">Billiards Action Webserver</h2>
-                    <img src="images/pool-table.png" alt="PoolTable" id="pool">
-                    <h2 class="subtitle">Description:</h2>
-                    <p2 id="para2">Nutreco is a leader in animal nutrition and plans on using technology to feed the
-                        growing population in a sustainable manner. There are several locations across
-                        Canada and internationally, in Ontario the two locations are in St Marys and
-                        Puslinch.<br><br>
-                        In Nutreco, everyone plays an important role in ensuring customers produce as
-                        much feed as possible for Feeding the Future. There are many roles in technology
-                        that play a huge part in that vision as well. There are Full Stack developers that
-                        ensure … As well as Product Owners and Product Managers that foresee …<br><br>
-                        Nutreco offers a wide range of services/products with animal feed being at the core
-                        of most of them.</p2>
-                    <h2 class="subtitle">Languages:</h2>
-                    <div class="langIcons">
-                        <img src="images/letter-c.png" alt="C" id="C" class="icon">
-                        <img src="images/python.png" alt="Python" id="Python" class="icon">
-                        <img src="images/database.png" alt="SQL" id="SQL" class="icon">
-                        <img src="images/coding.png" alt="HTMLCSSJS" id="HTMLCSSJS" class="icon">
-                    </div>
-                    
-                </div>
-                <div class="mancalaGame">
-                    <h2 id="job">Digital Mancala Game</h2>
-                    <img src="images/mancala.png" alt="PoolTable" id="mancala">
-                </div>
-                <div class="webGame">
-                    <h2 id="job">Personal Portfolio</h2>
-                    <img src="images/web-browser.png" alt="PoolTable" id="web">
-                </div>
+
+    <h2 id="header">Projects</h2>
+    <p id="para1">On this page are a few projects I have enjoyed completing! All projects listed are on my git linked on this website.</p>
+
+    <div class="jobs">
+        <div class="poolGame">
+            <h2 id="job">Billiards Action Webserver</h2>
+            <img src="images/pool-table.png" alt="PoolTable" id="pool">
+            <h2 class="subtitle">Description:</h2>
+            <p id="para2">The Billiards Action Web Server is a full-stack project that animates a pool shot. By adjusting the angle and power of the cue ball’s strike, the server dynamically determines which balls sink into the pockets, providing the user with a realistic and interactive billiards experience.<br><br>
+                This game has a C library that manages the various objects that would be on a pool table such as still balls, rolling balls, holes, a table, 4 cushions surrounding the table, and a cue stick. Memory is allocated for all these objects that are defined as enums and structs to account for varying coordinations.<br><br>
+                Then Python and SQLite act as a way to create databases and tables to save elements of the game such as time, players, shot #, and ball state (rolling, still, not on table, etc…) <br><br>The front end uses HTML to structure the page with input fields, buttons, and an SVG of the pool table. As well as CSS creating a user-friendly interface. The JavaScript is used to handle user interactions through event listeners, drawing a line from the cue ball to the cursor to indicate shot direction and length/power, and sending data like Game Name, Player names, and shot velocity to the server via POST requests when action buttons are clicked.</p>
+            <h2 class="subtitle">Languages/Tools:</h2>
+            <div class="langIcons">
+                <img src="images/letter-c.png" alt="C" id="C" class="icon">
+                <img src="images/python.png" alt="Python" id="Python" class="icon">
+                <img src="images/database.png" alt="SQL" id="SQL" class="icon">
+                <img src="images/coding.png" alt="HTMLCSSJS" id="HTMLCSSJS" class="icon">
+                <img src="images/code.png" alt="HTMLCSSJS" id="git" class="icon">
             </div>
+            <h2 class="subtitle">Reflection:</h2>
+            <table>
+                <tr>
+                    <td id="sec">Learning Outcomes</td>
+                    <td id="sec">Improvements</td>
+                    
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp"> A strong backend with no memory leaks ensures a better overall project and a nicer user experience.</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Lacking logic surrounding game rules that needs to be implemented.</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">Python acts as the glue between a C backend and front-end JavaScript to create a responsive game that stores game state in relational databases.</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Working towards a server logic that allows users to compete against each other.</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">A bigger project has many moving pieces, so setting frequent deadlines is important to ensure a successful outcome.</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"> <p id="imp">More visually appealing game set up on the front end.</p></td>
+                </tr>
+            </table>
             
-
-
-        <div class="skills">
-            <h2 id="skill">Skills</h2>
         </div>
-        <div class="skillsLogo">
-            <img src="images/plan.png" alt="nutreco icon" id="skillLogo">
+        <div class="mancalaGame">
+            <h2 id="job">Digital Mancala Game</h2>
+            <img src="images/mancala.png" alt="Mancala" id="mancala">
+            <h2 class="subtitle">Description:</h2>
+            <p id="para2">The project consists of 11 executable classes and several testing classes. Out of these, 10 classes represent individual components of the full Mancala game, which are utilized by the TextUI class. The TextUI class interacts with the MancalaGame class, which in turn relies on the Board class to manage game functionality.<br><br>
+                With JUnit tests, I ensured that each smaller component of the program worked correctly, which made the process of testing and debugging much easier. I made JUnit tests as I developed the software to not test all at once at the end. </p>
+            <h2 class="subtitle">Languages/Tools:</h2>
+            <div class="langIcons">
+                <img src="images/java.png" alt="Java" id="Java" class="icon2">
+                <img src="images/code.png" alt="Git" id="git2" class="icon2">
+                <img src="images/docker.png" alt="Docker" id="Docker" class="icon2">
+            </div>
+            <p id="test">View Test Document:</p>
+            <a href="pdf/testCaseDocument.pdf" target="_blank">  <img src="images/open-folder.png" alt="cv icon" id="folder"></a>
+
+            <h2 class="subtitle">Reflection:</h2>
+            <table>
+                <tr>
+                    <td id="sec">Learning Outcomes</td>
+                    <td id="sec">Improvements</td>
+                    
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">Refactoring code is good practice for improving its cleanliness, readability, and reusability. By making code more reusable, it becomes easier to maintain and manage over time.</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Adding a GUI to make the game more user-friendly.</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">Testing in smaller parts allows for simplified debugging, detecting bugs earlier, and allows to refactor code easily.</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Adding more detailed test cases.</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">Abstraction, encapsulation, polymorphism, and inheritance</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"> <p id="imp">Continue refactoring and maintaining code.</p></td>
+                </tr>
+            </table>
         </div>
-        
+        <div class="webGame">
+            <h2 id="job">Personal Portfolio</h2>
+            <img src="images/web-browser.png" alt="Web Browser" id="web">
+            <h2 class="subtitle">Description:</h2>
+            <p id="para2">Nutreco is a leader in animal nutrition and plans on using technology to feed the
+                growing population in a sustainable manner. There are several locations across
+                Canada and internationally, in Ontario the two locations are in St Marys and
+                Puslinch.<br><br>
+                In Nutreco, everyone plays an important role in ensuring customers produce as
+                much feed as possible for Feeding the Future. There are many roles in technology
+                that play a huge part in that vision as well. There are Full Stack developers that
+                ensure … As well as Product Owners and Product Managers that foresee …<br><br>
+                Nutreco offers a wide range of services/products with animal feed being at the core
+                of most of them.</p>
+            <h2 class="subtitle">Languages/Tools:</h2>
+            <div class="langIcons">
+                <img src="images/letter-c.png" alt="C" id="C" class="icon">
+                <img src="images/python.png" alt="Python" id="Python" class="icon">
+                <img src="images/database.png" alt="SQL" id="SQL" class="icon">
+                <img src="images/coding.png" alt="HTMLCSSJS" id="HTMLCSSJS" class="icon">
+            </div>
+            <h2 class="subtitle">Reflection:</h2>
+            <table>
+                <tr>
+                    <td id="sec">Learning Outcomes</td>
+                    <td id="sec">Improvements</td>
+                    
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp"> A strong backend with no memory leaks ensures a better overall project and a nicer user experience</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Lacking logic surrounding game rules that needs to be implemented</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">Python acts as the glue between a C backend and front-end JavaScript to create a responsive game that stores game state in relational databases</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"><p id="imp">Working towards a server logic that allows users to compete against each other</p></td>
+                </tr>
+                <tr>
+                    <td id="details"><img src="images/check-mark.png" alt="Checkmark" id="Check" class="Check"> <p id="imp">A bigger project has many moving pieces, so setting frequent deadlines is important to ensure a successful outcome</p></td>
+                    <td id="details"><img src="images/pin.png" alt="Pin" id="Pin" class="Pin"> <p id="imp">More visually appealing game set up on the front end</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2 id="skill">Skills</h2>
+    </div>
+    <div class="skillsLogo">
+        <img src="images/plan.png" alt="nutreco icon" id="skillLogo">
+    </div>
 </body>
 </html>
-
-
-
- 
