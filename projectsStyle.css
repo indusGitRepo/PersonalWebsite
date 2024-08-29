@@ -266,6 +266,12 @@ table td, table th {
     height: 70px; 
     margin-top: 15%;
 }
+.icon3{
+    position: absolute;
+    width: 70px; 
+    height: 70px; 
+    margin-top: 15%;
+}
 /* Positioning each icon around the pentagon */
 #C {
     top: 50%;
@@ -290,7 +296,11 @@ table td, table th {
     left: 50%;
     transform: translate(-50%, -50%) rotate(216deg) translateX(90px) rotate(-216deg);
 }
-
+#HTMLCSSJS2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(216deg) translateX(90px) rotate(-216deg);
+}
 #git {
     top: 50%;
     left: 50%;
@@ -307,7 +317,11 @@ table td, table th {
     left: 50%;
     transform: translateX(-50%);
 }
-
+#git3 {
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%);
+}
 #Java {
     bottom: 0;
     left: 0;
@@ -454,7 +468,7 @@ table td, table th {
         width: 100%;
         height: calc(100vh - 90px); /* Full height minus navbar height */
         padding: 20px;
-        overflow-y: auto; /* Scroll if content overflows */
+        overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
         right: 20px;
@@ -504,7 +518,7 @@ table td, table th {
     .imgs {
         display: none;
     }
-
+    
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
@@ -531,8 +545,61 @@ table td, table th {
     #nutreco{
         display: none;
     }
+    #folder {
+        width: 60px;
+        height: auto;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+        margin-left: 20%;
+        margin-top: 5%;
+        transition: all 0.3s ease; /* Add transition for smooth animation */
+    }
+    #pool{
+        margin-left: -150px;
+    }
+    #mancala{
+        margin-left: -150px;
+    }
+    #web{
+        margin-left: -150px;
+    }
+}
+@media (max-width: 1224px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 750%; /* Adjust as needed */
+        right: 25%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 100px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
 }
 
+@media (max-width: 724px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 750%; /* Adjust as needed */
+        right: 15%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 100px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 90px;
+        width: 90px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+}
 @media (min-width: 1425px) {
     
 
