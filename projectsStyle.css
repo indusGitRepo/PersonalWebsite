@@ -605,3 +605,339 @@ table td, table th {
 
     /*add later*/
 }
+
+@media (min-width: 1024px) {
+    
+    
+    .navbar {
+        font-size: 1.5rem; /* Increase font size */
+        padding: 100px 30px; /* Increase padding */
+    }
+    
+    .navbar_menu {
+        padding: 15px 30px; /* Adjust padding within the menu */
+    }
+    
+    .navbar_link {
+        font-size: 1.7rem; /* Adjust link font size */
+        padding: 0 0.5rem;
+    }
+    .navbar_link::before {
+        top: 30px;
+        left: 0;
+        width: 0;
+        height: 2px;
+    }
+    .logo{
+        height: 200px; /* Adjust the height as needed */
+        width: auto;
+    }
+    .imgs img {
+        width: 60px; /* Adjust as needed */
+        height: 60px; /* Adjust as needed */
+    }
+}
+@media (min-width: 1024px){
+    .logo{
+        display: none;
+    }
+    .navbar_menu.active {
+        display: flex; /* Adjust according to layout needs */
+        flex-direction: column; /* Stack menu items vertically */
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed; /* Fix position for menu */
+        top: 200px; /* Adjust based on navbar height */
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: none; /* Scroll if content overflows */
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%; 
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box; 
+        font-size: 35px;
+    
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw; 
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    .navbar_link:hover {
+        color: transparent;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.3s;
+    }
+    .navbar_link::before {
+        content: '';
+        position: absolute;
+        top: 67px;
+        left: 30px;
+        width: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
+        transition: width 0.3s;
+    }
+    
+    .navbar_link:hover::before {
+        width: calc(100% - 30px);
+    }
+    /* Default state: hide the images */
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: rgb(240, 166, 242);
+        font-size: 50px;
+        background-color: black; 
+        padding: 10px; 
+        transition: background-color 0.3s, transform 0.3s; 
+    }
+    .close-menu{
+        font-size: 50px;
+    }
+   
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (min-width: 390px) {
+    #para, #para2, #para3, #para4, #para1 {
+
+        font-size: 0.8rem;
+        max-width: 80%;
+        text-align: center;
+        margin-left: 0;
+        
+    }
+    #para1{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    #header{
+        font-size: 2.5rem;
+    }
+    .container{
+        gap: 50px;
+    }
+    .subtitle{
+        font-size: 1.9rem;
+        margin: 0 0;
+        margin-left: 0;
+    }
+    #mobile{
+        margin-left: 60px;
+    }
+    .button{
+        font-size: 0.7rem;
+    }
+    .icon{
+        width: 70px;
+        height: auto;
+    }
+ 
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex; /* Adjust according to layout needs */
+        flex-direction: column; /* Stack menu items vertically */
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed; /* Fix position for menu */
+        top: 90px; /* Adjust based on navbar height */
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: none; /* Scroll if content overflows */
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%; 
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box; 
+        font-size: 20px;
+    
+    }
+    .navbar_link::before {
+        top: 47px;
+    }
+    #title{
+        font-size: 2.5rem;
+        letter-spacing: 0;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 600%; /* Adjust as needed */
+        right: 10%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 30px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 80px;
+        width: 80px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw; 
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    #header{
+        font-size: 2.5rem;
+    }
+    .jobs, .skills{
+        font-size: 1.2rem;
+        margin: -15% 0;
+        margin-left: 3%;
+    }
+    .skills{
+        font-size: 1.2rem;
+        margin: 13% 0;
+        margin-left: 3%;
+    }
+    #para, #para2, #para3, #para4, #para1{
+        font-size: 0.8rem;
+        max-width: 80%;
+        text-indent: 0;
+        text-align: center;
+        margin-left: 10%;
+    }
+    #para1{
+        font-size: 0.8rem;
+        max-width: 80%;
+        text-indent: 0;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    .goals{
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Adjust the gap between images */
+        max-width: 400px; /* Set a maximum width for the grid */
+        margin: 0 10px; /* Center the grid */
+        align-items: center;
+    }
+    #Amino, #Excel, #AminoFlock {
+        width: 300px;
+        height: auto;
+    }
+    .Exceltextbox {
+        width: 400px; /* Set the width of the textbox */
+        padding: 10px; /* Add some padding inside the textbox */
+        font-size: 0.8rem; /* Adjust the font size */
+        margin-left: 0;
+        
+    }
+    .Aminotextbox {
+        width: 400px; /* Set the width of the textbox */
+        padding: 10px; /* Add some padding inside the textbox */
+        font-size: 0.8rem; /* Adjust the font size */
+        margin-right: 0;
+    }
+    .colorful-textbox {
+        max-width: 400px; 
+        padding: 10px; /* Add some padding inside the textbox */
+        background-color: #ffffff; /* Set the background color */
+        font-size: 0.8rem; 
+        margin-top: 15%;
+    }
+    #disclaimer{
+        font-size: 0.8rem;
+    }
+    #folder {
+        width: 50px;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 10%;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+        transition: all 0.3s ease; /* Add transition for smooth animation */
+    }
+    .flowchart-goals{
+        display: none;
+    }
+    .con{
+        margin-left: 0;
+        margin-top: 5%;
+        transition: color 0.3s;
+        font-size: 1.5rem;
+        color: #272626;
+        text-shadow: 2px 2px 2px white;
+    }
+    #mobile{
+        display: none;
+    }
+    table {
+        margin: 100px auto;  
+    }
+    
+    th, td {
+        padding: 7px;    
+    }
+    #sec{
+        font-size: 1rem;
+    }
+    #imp{
+        font-size: 0.8rem;
+    }
+    #main {
+        background-color: #eac5f8;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    #Check, #Pin{
+        width: 30px;
+        height: 30px;
+    }
+    .icon, .icon2, .icon3{
+        width: 50px; 
+        height: 50px; 
+        margin-top: 15%;
+    }
+    .langIcons {
+        position: relative;
+        width: 100px; /* Width of the circle */
+        height: 300px; /* Height of the circle */
+        border-radius: 50%; /* Make the container a circle */
+        margin: auto;
+        margin-left: 30%;
+    }
+}
