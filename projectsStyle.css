@@ -102,22 +102,22 @@ body {
     width: 100%;
 }
 #pool{
-    width: 100px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -180px;
+    margin-left: -160px;
 }
 #mancala{
-    width: 100px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -180px;
+    margin-left: -160px;
 }
 #web{
-    width: 100px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -180px;
+    margin-left: -160px;
 }
 #skillLogo{
     width: 130px;
@@ -701,7 +701,7 @@ table td, table th {
         font-size: 2rem;
     }
     #pool, #mancala, #web{
-        width: 75px;
+        width: 85px;
         height: auto;
         margin-top: -150px;
         margin-left: -90px;
