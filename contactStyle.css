@@ -410,7 +410,7 @@ nav ul li e::after{
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 20px;
+        right: 17px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -427,7 +427,7 @@ nav ul li e::after{
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: -2%;
         width: 100vw; 
         height: 1px;
         background-color: rgba(255, 255, 255, 0.2); 
@@ -526,7 +526,7 @@ nav ul li e::after{
         display: flex;
         position: absolute;
         top: 750%; /* Adjust as needed */
-        right: 15%; /* Adjust as needed */
+        right: 10%; /* Adjust as needed */
         flex-direction: row;
         gap: 100px; /* Adjust spacing if needed */
     }
@@ -542,7 +542,6 @@ nav ul li e::after{
         width: 30rem;
     }
 }
-
 @media (max-width: 1024px) {
     .contact-form-input {
         max-width: 55rem; 
@@ -559,208 +558,219 @@ nav ul li e::after{
         max-width: 40rem; 
     }
 }
-
-
-@media (min-width: 1024px) {
-    
-    
-    .navbar {
-        font-size: 1.5rem; /* Increase font size */
-        padding: 100px 30px; /* Increase padding */
+@media (max-width: 555px){
+    .form-submit-btn{
+        width: 16rem;
+        height: 4rem;
+        background-image: linear-gradient(to right, rgb(174, 123, 255), rgb(254, 189, 125)); 
+        font-size: 1.2rem;
     }
-    
-    .navbar_menu {
-        padding: 15px 30px; /* Adjust padding within the menu */
+    .contact-form-input {
+        width: 20rem;
+        height: 4rem;
+        font-size: 1rem;
     }
-    
-    .navbar_link {
-        font-size: 1.7rem; /* Adjust link font size */
-        padding: 0 0.5rem;
-    }
-    .logo{
-        height: 200px; /* Adjust the height as needed */
-        width: auto;
-    }
-    .imgs img {
-        width: 60px; /* Adjust as needed */
-        height: 60px; /* Adjust as needed */
-    }
-    
-}
-@media (min-width: 1024px){
-    
-    .logo{
-        display: none;
-    }
-    .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
-        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 200px; /* Adjust based on navbar height */
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
-        padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .navbar_link {
-        padding: 20px 0;
-        top: 50%;
-        text-align: left;
-        width: 100%; 
-        position: relative;
-        padding-left: 30px;
-        box-sizing: border-box; 
-        font-size: 35px;
-    
-    }
-    .navbar_link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 30px;
-        width: 100vw; 
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
-    }
-    .navbar_link:hover {
-        color: transparent;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: background-image 0.3s;
-    }
-    .navbar_link::before {
-        content: '';
-        position: absolute;
-        top: 67px;
-        left: 30px;
-        width: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        transition: width 0.3s;
-    }
-    
-    .navbar_link:hover::before {
-        width: calc(100% - 30px);
-    }
-    /* Default state: hide the images */
-    
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        color: rgb(240, 166, 242);
-        font-size: 50px;
-        background-color: black; 
-        padding: 10px; 
-        transition: background-color 0.3s, transform 0.3s; 
-    }
-    .close-menu{
-        font-size: 50px;
-    }
-   
-}
-@media (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 390px) {
-    .navbar_link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: -20px;
-        width: 100vw; 
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
-    }
-    #para, #para2, #para3, #para4, #para1 {
-
-        font-size: 0.8rem;
+    .form-subheading{
+        font-size: 1rem;
         max-width: 80%;
+        margin-top: 20%;
+        margin-left: 10%;
         text-align: center;
+    }
+    #para2 {
+        text-align: center;
+        font-size: 1rem;
         margin-left: 0;
-        
+        margin-top: 30%;
+        max-width: 70%;
+        text-indent: 0;
     }
     #para1{
-        margin-top: 40px;
-        margin-left: 40px;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 15%;
+        margin-top: 30%;
+        max-width: 70%;
+        text-indent: 0;
     }
-    #header{
-        font-size: 2.5rem;
+    .form-heading{
+        font-size: 4rem;
     }
-    .container{
-        gap: 50px;
+    body {
+        overflow-x: hidden; 
     }
-    .subtitle{
-        font-size: 1.9rem;
-        margin: 0 0;
-        margin-left: 0;
-    }
-    #mobile{
-        margin-left: 60px;
-    }
-    .button{
-        font-size: 0.7rem;
-    }
-    .icon{
-        width: 70px;
-        height: auto;
-    }
- 
     /* When menu is active, display it */
     .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
+        position: fixed;
+        top: 90px;
         right: 0;
-        width: 100%;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
         height: calc(100vh - 90px); /* Full height minus navbar height */
         padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
     }
+    
     .navbar_link {
         padding: 20px 0;
         top: 50%;
         text-align: left;
-        width: 100%; 
+        width: 100%;
         position: relative;
         padding-left: 30px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         font-size: 20px;
-    
     }
     .navbar_link::before {
         top: 47px;
     }
-    #title{
-        font-size: 2.5rem;
-        letter-spacing: 0;
-    }
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
-        position: absolute;
-        top: 600%; /* Adjust as needed */
-        right: 10%; /* Adjust as needed */
+        top: 600% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
         flex-direction: row;
         gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
         height: 80px;
         width: 80px;
     }
     .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
     }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+@media (width: 768px){
+
+    body {
+        overflow-x: hidden; 
+    }
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 30px;
+    }
+    .navbar_link::before {
+        top: 53px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 700%; /* Adjust as needed */
+        left: 20%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 100px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media (max-width: 380px){
+    body {
+        overflow-x: hidden; 
+    }
+  
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+    
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    .navbar_link::before {
+        top: 47px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 550% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
+        flex-direction: row;
+        gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 70px;
+        width: 70px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
 }

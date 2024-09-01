@@ -161,7 +161,7 @@ table, th, td {
         "top top""bottom1 bottom2"; /* Define areas for bottom images */
         gap: 20px; /* Adjust the space between items */
         max-width: 800px; /* Set a maximum width for the grid */
-        margin: 0 8%; /* Center the grid */
+        margin: 0 5%; /* Center the grid */
     justify-items: center;
     
 }
@@ -201,7 +201,7 @@ table, th, td {
     border: 5px solid rgb(205, 35, 35);
 }
 #Amino {
-    width: 800px;
+    width: 700px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -209,7 +209,7 @@ table, th, td {
     
 }
 #Excel{
-    width: 800px;
+    width: 700px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -221,17 +221,17 @@ table, th, td {
 }
 
 .Excel.clicked{
-    transform: scale(1.2); /* Adjust the scale value as needed */
+    transform: scale(1.3); /* Adjust the scale value as needed */
     z-index: 1000; /* Bring the image above other elements */
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
 }
 .Amino.clicked{
-    transform: scale(1.2); /* Adjust the scale value as needed */
+    transform: scale(1.3); /* Adjust the scale value as needed */
     z-index: 1000; /* Bring the image above other elements */
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
 }
 .AminoFlock.clicked {
-    transform: scale(1.2); /* Adjust the scale value as needed */
+    transform: scale(1.3); /* Adjust the scale value as needed */
     z-index: 1000; /* Bring the image above other elements */
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
 }
@@ -271,7 +271,7 @@ table, th, td {
     
 }
 #AminoFlock{
-    width: 800px;
+    width: 700px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -281,8 +281,8 @@ table, th, td {
     display: flex;
     flex-direction: column;
     gap: 90px; /* Space between buttons */
-    margin-top: -9%;
-    margin-left: 18%;
+    margin-top: -10%;
+    margin-left: 20%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2.2rem;
     color: white;
@@ -359,7 +359,7 @@ table, th, td {
     gap: 0px;
     padding: 20px;
     margin-top: 30%;
-    margin-left: -40%;
+    margin-left: -50%;
 }
 
 .node {
@@ -418,7 +418,7 @@ table, th, td {
     background-color: #ffcb9a;
     position: relative;
     top: -560px; /* Reduced from -530px to bring closer */
-    right: -255%;
+    right: -214%;
 }
 
 .circle {
@@ -428,7 +428,7 @@ table, th, td {
     border-radius: 50%;
     position: relative;
     top: -220px; /* Adjusted from -200px to bring closer to the square */
-    right: -155%;
+    right: -125%;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -442,13 +442,13 @@ table, th, td {
 
 
 .connector {
-    width: 300px; /* Length of the horizontal line */
+    width: 200px; /* Length of the horizontal line */
     height: 3px; /* Thickness of the line */
     background-color: rgb(60, 60, 60);
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
     top: -50px; 
-    right: -100%;
+    right: -70%;
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
 }
 
@@ -471,7 +471,7 @@ table, th, td {
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
     top: -400px; 
-    right: -175%;
+    right: -135%;
 }
 
 .connector2::after {
@@ -588,14 +588,28 @@ table, th, td {
 }
 /* Styles for small screens */
 @media (max-width: 1424px) {
-
-   
+    .jobs {
+        margin-top: 0;
+        margin-left: 20%;
+    }
     /* Add padding to the bottom of the body to ensure the entire content is scrollable */
     body {
         padding-bottom: 100px; /* Adjust this value as needed */
     }
-    
-    
+    .flowchart-goals {
+        display: none;
+    }
+    #mobile{
+        display: none;
+    }
+    .con{
+        margin-top: 10%;
+    }
+    .colorful-textbox {
+        max-width: 3000px; 
+        font-size: 20px; 
+        text-align: center;
+    }
     .hamburger {
         display: block;
         cursor: pointer;
@@ -656,7 +670,7 @@ table, th, td {
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 20px;
+        right: 17px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -673,7 +687,7 @@ table, th, td {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: -2%;
         width: 100vw; 
         height: 1px;
         background-color: rgba(255, 255, 255, 0.2); 
@@ -729,7 +743,7 @@ table, th, td {
         display: none;
     }
 }
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     #AminoFlock{
         max-width: 500px;
         margin-left: 37%;
@@ -755,26 +769,69 @@ table, th, td {
         max-width: 300px;    
         object-fit: cover;    
     }
+} */
+@media (max-width: 1590px) {
+    #AminoFlock, #Amino, #Excel{
+        max-width: 600px;
+    }
 }
-@media (max-width: 1800px) {
+@media (max-width: 1400px) {
+    #AminoFlock, #Amino, #Excel{
+        max-width: 500px;
+    }
+}
+@media (max-width: 1200px) {
+    #AminoFlock, #Amino, #Excel{
+        max-width: 400px;
+    }
+}
+@media (max-width: 1000px) {
+    #AminoFlock, #Amino, #Excel{
+        max-width: 300px;
+    }
+}
+@media (max-width: 700px) {
     #AminoFlock{
         margin-top: 15%;
     }
-    
+    #Excel{
+        margin-left: 17%;
+    }
+    #Amino{
+        margin-left: 20%;
+    }
     .photos {
         display: flex;
-        align-items: center; 
-        flex-direction: column; 
-        gap: 20px;
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
+    
+}
+@media (max-width: 1424px) {
 
-    .photosimg {
-        width: 100%;
-        max-width: 300px;    
-        object-fit: cover;    
+    .Excel.clicked, .Amino.clicked, .AminoFlock.clicked{
+        transform: scale(1.3); /* Adjust the scale value as needed */
+        z-index: 1000; /* Bring the image above other elements */
+        box-shadow: 010px20pxrgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
     }
 }
-@media (max-width: 1850px) {
+@media (max-width: 1200px) {
+    
+    .node {
+        font-size: 16px;
+    }
+    #action {
+        font-size: 16px; 
+    }
+    .square {
+        width: 450px;
+    }
+    .sqr {
+        right: -220%;
+    }
+    
+}
+/* @media (max-width: 1850px) {
     .connector{
         display: none;
     }
@@ -832,7 +889,7 @@ table, th, td {
         right: -15%;
     }
     .square {
-        top: 40px; /* Increase this value to move the squares further down */
+        top: 40px;
         right: -15%;
         width: 300px;
     }
@@ -852,7 +909,7 @@ table, th, td {
         padding: 0;
         word-wrap: break-word;
     }
-}
+} */
 
 @media (max-width: 1224px){
     .navbar_menu.active ~ .imgs {
@@ -878,7 +935,7 @@ table, th, td {
         display: flex;
         position: absolute;
         top: 750%; /* Adjust as needed */
-        right: 15%; /* Adjust as needed */
+        right: 10%; /* Adjust as needed */
         flex-direction: row;
         gap: 100px; /* Adjust spacing if needed */
     }
@@ -892,320 +949,328 @@ table, th, td {
     }
 }
 
-
-@media (min-width: 1024px) {
-    
-    
-    .navbar {
-        font-size: 1.5rem; /* Increase font size */
-        padding: 100px 30px; /* Increase padding */
-    }
-    
-    .navbar_menu {
-        padding: 15px 30px; /* Adjust padding within the menu */
-    }
-    
-    .navbar_link {
-        font-size: 1.7rem; /* Adjust link font size */
-        padding: 0 0.5rem;
-    }
-    .navbar_link::before {
-        top: 30px;
-        left: 0;
-        width: 0;
-        height: 2px;
-    }
-    .logo{
-        height: 200px; /* Adjust the height as needed */
-        width: auto;
-    }
-    .imgs img {
-        width: 60px; /* Adjust as needed */
-        height: 60px; /* Adjust as needed */
-    }
-}
-@media (min-width: 1024px){
-    .logo{
-        display: none;
-    }
-    .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
-        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 200px; /* Adjust based on navbar height */
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
-        padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .navbar_link {
-        padding: 20px 0;
-        top: 50%;
-        text-align: left;
-        width: 100%; 
-        position: relative;
-        padding-left: 30px;
-        box-sizing: border-box; 
-        font-size: 35px;
-    
-    }
-    .navbar_link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100vw; 
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
-    }
-    .navbar_link:hover {
-        color: transparent;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: background-image 0.3s;
-    }
-    .navbar_link::before {
-        content: '';
-        position: absolute;
-        top: 67px;
-        left: 30px;
-        width: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        transition: width 0.3s;
-    }
-    
-    .navbar_link:hover::before {
-        width: calc(100% - 30px);
-    }
-    /* Default state: hide the images */
-    
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        color: rgb(240, 166, 242);
-        font-size: 50px;
-        background-color: black; 
-        padding: 10px; 
-        transition: background-color 0.3s, transform 0.3s; 
-    }
-    .close-menu{
-        font-size: 50px;
-    }
-   
-}
-@media (min-width: 768px) {
+@media (max-width: 555px){
     body {
-        font-size: 16px;
-    }
-}
-@media (min-width: 390px) {
-    #para, #para2, #para3, #para4, #para1 {
-
-        font-size: 0.8rem;
-        max-width: 80%;
-        text-align: center;
-        margin-left: 0;
-        
-    }
-    #para1{
-        margin-top: 40px;
-        margin-left: 40px;
-    }
-    #header{
-        font-size: 2.5rem;
-    }
-    .container{
-        gap: 50px;
-    }
-    .subtitle{
-        font-size: 1.9rem;
-        margin: 0 0;
-        margin-left: 0;
-    }
-    #mobile{
-        margin-left: 60px;
-    }
-    .button{
-        font-size: 0.7rem;
-    }
-    .icon{
-        width: 70px;
-        height: auto;
-    }
- 
-    /* When menu is active, display it */
-    .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
-        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
-        padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .navbar_link {
-        padding: 20px 0;
-        top: 50%;
-        text-align: left;
-        width: 100%; 
-        position: relative;
-        padding-left: 30px;
-        box-sizing: border-box; 
-        font-size: 20px;
-    
-    }
-    .navbar_link::before {
-        top: 47px;
-    }
-    #title{
-        font-size: 2.5rem;
-        letter-spacing: 0;
-    }
-    /* Show images when the menu is active */
-    .navbar_menu.active ~ .imgs {
-        display: flex;
-        position: absolute;
-        top: 600%; /* Adjust as needed */
-        right: 10%; /* Adjust as needed */
-        flex-direction: row;
-        gap: 30px; /* Adjust spacing if needed */
-    }
-    .navbar_menu.active ~ .imgs img{
-        height: 80px;
-        width: 80px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
-    }
-    .navbar_link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: -20px;
-        width: 100vw; 
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
-    }
-    #header{
-        font-size: 2.5rem;
-    }
-    .jobs, .skills{
-        font-size: 1.2rem;
-        margin: -15% 0;
-        margin-left: 3%;
-    }
-    .skills{
-        font-size: 1.2rem;
-        margin: 13% 0;
-        margin-left: 3%;
-    }
-    #para, #para2, #para3, #para4, #para1{
-        font-size: 0.8rem;
-        max-width: 80%;
-        text-indent: 0;
-        text-align: center;
-        margin-left: 10%;
-    }
-    #para1{
-        font-size: 0.8rem;
-        max-width: 80%;
-        text-indent: 0;
-        text-align: center;
-        margin-top: 15%;
-    }
-    .subtitle{
-        font-size: 1.5rem;
-    }
-    .goals{
-        font-size: 1.5rem;
-        text-align: left;
-        margin-left: 0;
-    }
-    
-    .photos {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; /* Adjust the gap between images */
-        max-width: 400px; /* Set a maximum width for the grid */
-        margin: 0 10px; /* Center the grid */
-        align-items: center;
-    }
-    #Amino, #Excel, #AminoFlock {
-        width: 300px;
-        height: auto;
-    }
-    .Exceltextbox {
-        width: 400px; /* Set the width of the textbox */
-        padding: 10px; /* Add some padding inside the textbox */
-        font-size: 0.8rem; /* Adjust the font size */
-        margin-left: 0;
-        
-    }
-    .Aminotextbox {
-        width: 400px; /* Set the width of the textbox */
-        padding: 10px; /* Add some padding inside the textbox */
-        font-size: 0.8rem; /* Adjust the font size */
-        margin-right: 0;
-    }
-    .colorful-textbox {
-        max-width: 400px; 
-        padding: 10px; /* Add some padding inside the textbox */
-        background-color: #ffffff; /* Set the background color */
-        font-size: 0.8rem; 
-        margin-top: 15%;
-    }
-    #disclaimer{
-        font-size: 0.8rem;
+        overflow-x: hidden; 
     }
     #folder {
         width: 50px;
         height: auto;
         margin-left: 10%;
         margin-top: 10%;
-        box-shadow: 5px 10px 10px rgb(0, 0, 0);
-        transition: all 0.3s ease; /* Add transition for smooth animation */
     }
-    .flowchart-goals{
-        display: none;
+    .Exceltextbox, .Aminotextbox {
+        width: 500px; /* Set the width of the textbox */
+        font-size: 12px; 
+        margin-left: 2%;
     }
-    .con{
+    #AminoFlock, #Amino{
+        width: 330px;
+    }
+    #Amino{
+        margin-left: -3%;
+    }
+    #Excel{
+        width: 300px;
+    }
+    .photos {
+        margin: 100px -15px; /* Center the grid */
+    }
+    .subtitle, .goals, .con{
         margin-left: 0;
+        font-size: 2rem;
+    }
+    .jobs, .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 90px; /* Space between buttons */
         margin-top: 5%;
-        transition: color 0.3s;
-        font-size: 1.5rem;
-        color: #272626;
-        text-shadow: 2px 2px 2px white;
+        margin-left: 2%;
+        font-size: 1.7rem;
     }
-    #mobile{
-        display: none;
+    #para, #para2, #para3, #para4, #para1 {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 15%;
+        max-width: 70%;
+        text-indent: 0;
     }
-    table {
-        margin: 100px auto;  
+    #header{
+        font-size: 4rem;
+    }
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
     }
     
-    th, td {
-        padding: 7px;    
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 20px;
     }
-  
-    #sec, #details{
-        font-size: 0.8rem;
+    .navbar_link::before {
+        top: 47px;
     }
-    #main {
-        background-color: #eac5f8;
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 600% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
+        flex-direction: row;
+        gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 80px;
+        width: 80px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+@media (width: 768px){
+
+    body {
+        overflow-x: hidden; 
+    }
+    #folder {
+        width: 80px;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .Exceltextbox, .Aminotextbox {
+        width: 500px; /* Set the width of the textbox */
+        font-size: 12px; 
+        margin-left: 2%;
+    }
+    #AminoFlock, #Amino{
+        width: 330px;
+    }
+    #Amino{
+        margin-left: -3%;
+    }
+    #Excel{
+        width: 300px;
+    }
+    .photos {
+        margin: 100px -15px; /* Center the grid */
+    }
+    .subtitle, .goals, .con{
+        margin-left: 0;
+        font-size: 2.7rem;
+    }
+    .jobs, .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 90px; /* Space between buttons */
+        margin-top: 5%;
+        margin-left: 2.9%;
+        font-size: 1.7rem;
+    }
+    #para, #para2, #para3, #para4, #para1 {
         text-align: center;
-        font-weight: bold;
+        font-size: 1.4rem;
+        margin-left: 15%;
+        max-width: 70%;
+        text-indent: 0;
+    }
+    #header{
+        font-size: 4.5rem;
+    }
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 30px;
+    }
+    .navbar_link::before {
+        top: 53px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 700%; /* Adjust as needed */
+        left: 20%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 100px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 380px){
+    body {
+        overflow-x: hidden; 
+    }
+    table {
+        max-width: 300px;
+    }
+    #sec, #details{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    #main{
+        font-family: 'Montserrat';
         font-size: 1rem;
     }
+    #folder {
+        width: 80px;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .Exceltextbox, .Aminotextbox {
+        width: 500px; /* Set the width of the textbox */
+        font-size: 12px; 
+        margin-left: 2%;
+    }
+    #AminoFlock, #Amino{
+        width: 330px;
+    }
+    #Amino{
+        margin-left: -3%;
+    }
+    #Excel{
+        width: 300px;
+    }
+    .photos {
+        margin: 100px -15px; /* Center the grid */
+    }
+    .subtitle, .goals, .con{
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .jobs, .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 90px; /* Space between buttons */
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 1.5rem;
+    }
+    #para, #para2, #para3, #para4, #para1 {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-left: 5%;
+        max-width: 90%;
+        text-indent: 0;
+    }
+    #header{
+        font-size: 3rem;
+    }
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+    
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    .navbar_link::before {
+        top: 47px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 550% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
+        flex-direction: row;
+        gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 70px;
+        width: 70px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
 }

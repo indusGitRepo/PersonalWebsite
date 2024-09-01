@@ -85,7 +85,7 @@ body {
     animation: photo-animation 3s infinite;
     width: 550px;
     position: absolute; /* Position relative to the parent container */
-    top: 45%; /* Adjust as needed */
+    top: 50%; /* Adjust as needed */
     margin-left: 0px;
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
@@ -380,11 +380,12 @@ body {
     .button-container1{
         position: relative; /* Keep the container in the natural flow */
         top: 20%; /* Adjust or remove this value if needed */
+        margin-left: 40%;
         align-items: center; /* Center items vertically */
     }
     #animation{
         position: relative; /* Keep the container in the natural flow */
-        top: 5%; /* Adjust or remove this value if needed */
+        top: 10% !important; 
         align-items: center; /* Center items vertically */
     }
     .colorful-textbox {
@@ -463,7 +464,7 @@ body {
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 20px;
+        right: 17px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -480,7 +481,7 @@ body {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: -2%;
         width: 100vw; 
         height: 1px;
         background-color: rgba(255, 255, 255, 0.2); 
@@ -528,20 +529,26 @@ body {
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
     }
-    }
+    
+}
 
-@media (max-height: 700px) {
+@media (max-height: 900px) {
     #button-container {
         margin-top: 20px; /* Increase the margin-top to prevent overlap */
         width: 50px;
     }
     
     #animation {
-        top: 30%; /* Adjust top to avoid overlap */
-        width: 350px;
+        top: 10%; /* Adjust top to avoid overlap */
+        margin-left: -5%;
+        width: 450px;
     }
 }
-
+@media (max-width: 1885px) {  
+    #animation {
+        top: 50%;
+    }
+}
 @media (max-width: 1224px){
     .navbar_menu.active ~ .imgs {
         display: flex;
@@ -566,7 +573,7 @@ body {
         display: flex;
         position: absolute;
         top: 750%; /* Adjust as needed */
-        right: 15%; /* Adjust as needed */
+        right: 10%; /* Adjust as needed */
         flex-direction: row;
         gap: 100px; /* Adjust spacing if needed */
     }
@@ -579,248 +586,327 @@ body {
         transform: scale(1.6); 
     }
 }
-
-
-
-@media (min-width: 1024px) {
-    
-    
-    .navbar {
-        font-size: 1.5rem; /* Increase font size */
-        padding: 100px 30px; /* Increase padding */
-    }
-    
-    .navbar_menu {
-        padding: 15px 30px; /* Adjust padding within the menu */
-    }
-    
-    .navbar_link {
-        font-size: 1.7rem; /* Adjust link font size */
-        padding: 0 0.5rem;
-    }
-    .navbar_link::before {
-        top: 30px;
-        left: 0;
-        width: 0;
-        height: 2px;
-    }
-    .logo{
-        height: 200px; /* Adjust the height as needed */
-        width: auto;
-    }
-    .imgs img {
-        width: 60px; /* Adjust as needed */
-        height: 60px; /* Adjust as needed */
+@media (width: 430px){
+    #animation {
+        top: -50% !important;
     }
 }
-@media (min-width: 1024px){
-    .logo{
-        display: none;
+@media (width: 414px){
+    #animation {
+        top: -30% !important;
     }
-    .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
-        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 200px; /* Adjust based on navbar height */
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
-        padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .navbar_link {
-        padding: 20px 0;
-        top: 50%;
-        text-align: left;
-        width: 100%; 
-        position: relative;
-        padding-left: 30px;
-        box-sizing: border-box; 
-        font-size: 35px;
-    
-    }
-    .navbar_link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100vw; 
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
-    }
-    .navbar_link:hover {
-        color: transparent;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: background-image 0.3s;
-    }
-    .navbar_link::before {
-        content: '';
-        position: absolute;
-        top: 67px;
-        left: 30px;
-        width: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgb(140, 25, 133), rgb(255, 186, 228));
-        transition: width 0.3s;
-    }
-    
-    .navbar_link:hover::before {
-        width: calc(100% - 30px);
-    }
-    /* Default state: hide the images */
-    
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        color: rgb(240, 166, 242);
-        font-size: 50px;
-        background-color: black; 
-        padding: 10px; 
-        transition: background-color 0.3s, transform 0.3s; 
-    }
-    .close-menu{
-        font-size: 50px;
-    }
-   
 }
-@media (min-width: 768px) {
+@media (width: 412px){
+    #animation {
+        top: -25% !important;
+    }
+}
+@media (width: 360px){
+    #animation {
+        top: 35% !important;
+    }
+}
+@media (width: 540px){
+    #animation {
+        top: -220% !important;
+    }
+}
+@media (width: 344px){
+    #animation {
+        top: 40% !important;
+    }
+    .photos #frens, #GCG24, #GCG23 {
+        width: 80%; 
+        
+    }
+    #nature{
+        width: 80%; 
+    }
+}
+@media (max-width: 555px){
     body {
-        font-size: 16px;
+        overflow-x: hidden; 
     }
-}
-
-@media (min-width: 390px) {
-   
-    #header{
-        font-size: 2.5rem;
+    .pop-image.clicked {
+        transform: scale(1.1); 
     }
-    .container{
-        gap: 50px;
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        max-width: 700px; /* Set a maximum width for the grid */
+        margin: 400px 50px; /* Center the grid */
     }
-    .subtitle{
-        font-size: 1.9rem;
-        margin: 0 0;
+    #animation {
+        animation: photo-animation 3s infinite;
+        width: 200px;
+        position: absolute; /* Position relative to the parent container */
+        margin-top: 630%; /* Adjust as needed */
+        margin-left: 0px;
+        box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    }
+    #showImage, #stop{
+        width: 10rem;
+        font-size: 0.7rem;
+        margin-top: 30%;
+    }
+    #para, #para2, #para3, #para4 {
+        text-align: center;
+        font-size: 1rem;
         margin-left: 0;
+        max-width: 70%;
+        text-indent: 0;
     }
-    #mobile{
-        margin-left: 60px;
+    #title{
+        font-size: 4rem;
     }
-    
- 
     /* When menu is active, display it */
     .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
+        position: fixed;
+        top: 90px;
         right: 0;
-        width: 100%;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
         height: calc(100vh - 90px); /* Full height minus navbar height */
         padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
-        flex-direction: column;
-        align-items: flex-start; 
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
     }
+    
     .navbar_link {
         padding: 20px 0;
         top: 50%;
         text-align: left;
-        width: 100%; 
+        width: 100%;
         position: relative;
         padding-left: 30px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         font-size: 20px;
-    
     }
     .navbar_link::before {
         top: 47px;
     }
-    #title{
-        font-size: 2.5rem;
-        letter-spacing: 0;
-    }
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
-        position: absolute;
-        top: 600%; /* Adjust as needed */
-        right: 10%; /* Adjust as needed */
+        top: 600% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
         flex-direction: row;
         gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
         height: 80px;
         width: 80px;
     }
     .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-       
-        transform: scale(1.6); 
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
     }
     .navbar_link::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: -20px;
-        width: 100vw; 
+        width: 100vw;
         height: 1px;
-        background-color: rgba(255, 255, 255, 0.2); 
+        background-color: rgba(255, 255, 255, 0.2);
     }
-    #para, #para2, #para3, #para4{
-        font-size: 0.8rem;
-        max-width: 80%;
-    }
-    #showImage{
-        width: 10rem;
-        height: 3rem;
-        font-size: 0.8rem;
-        margin-left:-200px;
-    }
-    #stop{
-        width: 10rem;
-        height: 3rem;
-        font-size: 0.8rem;
-    }
-    .photos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
-        gap: 10px; /* Adjust the gap between images */
-        max-width: 400px; /* Set a maximum width for the grid */
-        margin: 400px 10px; /* Center the grid */
-        align-items: center;
-    }
-    #nature{
-        height: 190px; /* Maintain aspect ratio */
-    }
-    .pop-image {
-        width: 100%;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-    
-    .pop-image.clicked {
-        transform: scale(1.1); /* Enlarge the image */
-        z-index: 1000; /* Bring it above other elements */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.744); /* Add a shadow to make it pop */
+
+}
+@media (width: 768px){
+
+    body {
+        overflow-x: hidden; 
     }
     .colorful-textbox {
-        width: 300px; /* Set the width of the textbox */
+        width: 400px; /* Set the width of the textbox */
         padding: 40px; /* Add some padding inside the textbox */
         background-color: #6581de; /* Set the background color */
         color: white; /* Set the text color */
-        font-size: 0.8rem; /* Adjust the font size */
-        border-radius: 10px; /* Optional: Add rounded corners */
-        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); /* Optional: Add a shadow for depth */
-        text-align: center; /* Optional: Center the text */
-        margin: 0 13%; /* Optional: Center the textbox on the page */
-        font-family: 'Montserrat';
+        font-size: 20px; 
+    }
+    .pop-image.clicked {
+        transform: scale(1.1); 
+    }
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        max-width: 700px; /* Set a maximum width for the grid */
+        margin: 400px 50px; /* Center the grid */
+    }
+    #animation {
+        animation: photo-animation 3s infinite;
+        width: 500px;
+        position: absolute; /* Position relative to the parent container */
+        margin-top: 210%; /* Adjust as needed */
+        margin-left: 0px;
+        box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    }
+    #showImage, #stop{
+        width: 20rem;
+        font-size: 1.2rem;
+        margin-top: 30%;
+    }
+    #para, #para2, #para3, #para4 {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-left: 0;
+        max-width: 90%;
+        text-indent: 0;
+    }
+    #title{
+        font-size: 4.5rem;
+    }
+
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 30px;
+    }
+    .navbar_link::before {
+        top: 53px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 700%; /* Adjust as needed */
+        left: 20%; /* Adjust as needed */
+        flex-direction: row;
+        gap: 100px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
     }
 }
 
+@media (max-width: 380px){
+    body {
+        overflow-x: hidden; 
+    }
+    .colorful-textbox {
+        width: 350px; /* Set the width of the textbox */
+        padding: 40px; 
+        font-size: 16px;
+    }
+    .pop-image.clicked {
+        transform: scale(1.1); 
+    }
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        max-width: 700px; /* Set a maximum width for the grid */
+        margin: 400px 50px; /* Center the grid */
+    }
+    #animation {
+        animation: photo-animation 3s infinite;
+        width: 200px;
+        position: absolute; /* Position relative to the parent container */
+        margin-top: 400%; /* Adjust as needed */
+        margin-left: 0px;
+        box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    }
+    #showImage, #stop{
+        width: 10rem;
+        font-size: 0.7rem;
+        margin-top: 30%;
+    }
+    #para, #para2, #para3, #para4 {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-left: 0;
+        max-width: 90%;
+        text-indent: 0;
+    }
+    #title{
+        font-size: 3rem;
+    }
+    /* When menu is active, display it */
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
+        position: fixed;
+        top: 90px;
+        right: 0;
+        z-index: 1000; /* Ensure it's above other elements but doesn't cover the scrollbar */
+        width: 100%; /* Reduce width to avoid covering scrollbar */
+        height: calc(100vh - 90px); /* Full height minus navbar height */
+        padding: 20px;
+        overflow-y: auto; /* Allow scrolling within the menu */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        align-items: flex-start;
+    }
+    
+    .navbar_link {
+        padding: 20px 0;
+        top: 50%;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    .navbar_link::before {
+        top: 47px;
+    }
+    /* Show images when the menu is active */
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        top: 550% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
+        flex-direction: row;
+        gap: 30px; /* Adjust spacing if needed */
+        z-index: 1000;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 70px;
+        width: 70px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395);
+    
+        transform: scale(1.6);
+    }
+    .navbar_link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
+}
