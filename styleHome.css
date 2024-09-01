@@ -955,10 +955,10 @@ body {
 .button-icon-container {
     display: flex;
     flex-direction: row; 
-    gap: 120px; 
+    gap: 100px; 
     padding: 20px; 
     position: absolute;
-    top: 100%; 
+    top: 90%; 
     right: 5%; 
 }
 
