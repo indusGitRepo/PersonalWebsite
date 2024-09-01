@@ -701,7 +701,7 @@ table td, table th {
         font-size: 2rem;
     }
     #pool, #mancala, #web{
-        width: 85px;
+        width: 75px;
         height: auto;
         margin-top: -150px;
         margin-left: -90px;
