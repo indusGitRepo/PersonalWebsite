@@ -102,22 +102,22 @@ body {
     width: 100%;
 }
 #pool{
-    width: 70px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -150px;
+    margin-left: -180px;
 }
 #mancala{
-    width: 70px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -150px;
+    margin-left: -180px;
 }
 #web{
-    width: 70px;
+    width: 90px;
     height: auto;
     margin-top: -100px;
-    margin-left: -150px;
+    margin-left: -180px;
 }
 #skillLogo{
     width: 130px;
@@ -555,13 +555,13 @@ table td, table th {
         transition: all 0.3s ease; /* Add transition for smooth animation */
     }
     #pool{
-        margin-left: -150px;
+        margin-left: -170px;
     }
     #mancala{
-        margin-left: -150px;
+        margin-left: -170px;
     }
     #web{
-        margin-left: -150px;
+        margin-left: -170px;
     }
 }
 @media (max-width: 1004px){
