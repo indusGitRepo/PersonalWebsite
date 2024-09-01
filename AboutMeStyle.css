@@ -404,7 +404,10 @@ body {
         grid-template-columns: 1fr; /* Single column for smaller screens */
         grid-template-rows: auto;   /* Auto height for rows */
         align-items: center;  
-        margin-left: -1%;
+        margin-left: 25%;
+    }
+    .pop-image.clicked {
+        transform: scale(1.1); 
     }
     .container{
         align-items: center;
