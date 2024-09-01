@@ -395,7 +395,7 @@ table, th, td {
 }
 .square {
     width: 500px;
-    height: 100px;
+    height: 180px;
     background-color: #9ac2ff;
     z-index: 1;
 }
@@ -403,6 +403,7 @@ table, th, td {
 .disclaimer{
     color: rgb(148, 5, 5);
     margin-top: 10%;
+    text-indent: 0;
 }
 #disclaimer, #mobile{
     font-size: 1rem;
@@ -416,8 +417,8 @@ table, th, td {
     word-wrap: break-word; /* Ensure the text wraps if it’s too long */
 }
 .sqr {
-    width: 360px;
-    height: 360px;
+    width: 340px;
+    height: 340px;
     background-color: #ffcb9a;
     position: relative;
     top: -560px; /* Reduced from -530px to bring closer */
@@ -425,8 +426,8 @@ table, th, td {
 }
 
 .circle {
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     background-color: #f8a4e4;
     border-radius: 50%;
     position: relative;
