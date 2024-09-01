@@ -389,7 +389,7 @@ body {
         position: relative; /* Keep the container in the natural flow */
         top: 10% !important; 
         margin-left: -3%;
-        max-width: 550px;
+        max-width: 400px;
         align-items: center; /* Center items vertically */
     }
     .colorful-textbox {
@@ -404,7 +404,7 @@ body {
         grid-template-columns: 1fr; /* Single column for smaller screens */
         grid-template-rows: auto;   /* Auto height for rows */
         align-items: center;  
-        margin-left: -3%;
+        margin-left: -1%;
     }
     .container{
         align-items: center;
