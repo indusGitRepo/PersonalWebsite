@@ -1174,8 +1174,8 @@ body {
         gap: 200px; 
     }
     .navbar_menu.active ~ .imgs img{
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
@@ -1208,13 +1208,13 @@ body {
         display: flex;
         position: absolute;
         top: 650%; 
-        right: -2%;
+        right: 0;
         flex-direction: row;
         gap: 100px;
     }
     .navbar_menu.active ~ .imgs img{
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
