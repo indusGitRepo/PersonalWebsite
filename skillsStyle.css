@@ -395,7 +395,7 @@ table, th, td {
 }
 .square {
     width: 500px;
-    height: 180px;
+    height: 130px;
     background-color: #9ac2ff;
     z-index: 1;
 }
@@ -410,7 +410,7 @@ table, th, td {
 }
 #action {
     list-style: none;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 16px; /* Adjust the font size as needed */
     text-align: center;
     margin: 0; /* Remove default list margin */
     padding: 0; /* Remove default list padding */
@@ -451,7 +451,7 @@ table, th, td {
     background-color: rgb(60, 60, 60);
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
-    top: -50px; 
+    top: -60px; 
     right: -65%;
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
 }
