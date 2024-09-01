@@ -1208,7 +1208,7 @@ body {
         display: flex;
         position: absolute;
         top: 650%; 
-        right: 0;
+        right: 3;
         flex-direction: row;
         gap: 100px;
     }
