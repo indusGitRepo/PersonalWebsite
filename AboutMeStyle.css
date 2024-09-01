@@ -25,7 +25,7 @@ body {
 
 
 .photos #frens, #GCG24, #GCG23 {
-    width: 100%; /* Make images fill their grid cells */
+    width: 90%; /* Make images fill their grid cells */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images cover the grid cell */
     border-radius: 1rem;
@@ -46,7 +46,7 @@ body {
     border: 5px solid rgb(205, 35, 35);
 }
 #nature{
-    width: 100%; /* Make images fill their grid cells */
+    width: 90%; /* Make images fill their grid cells */
     height: 455px; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 1rem;
@@ -70,11 +70,11 @@ body {
     object-fit: cover; /* Ensure images cover the grid cell */
 }
 .colorful-textbox {
-    width: 400px; /* Set the width of the textbox */
-    padding: 40px; /* Add some padding inside the textbox */
+    width: 380px; /* Set the width of the textbox */
+    padding: 35px; /* Add some padding inside the textbox */
     background-color: #6581de; /* Set the background color */
     color: white; /* Set the text color */
-    font-size: 18px; /* Adjust the font size */
+    font-size: 16px; /* Adjust the font size */
     border-radius: 10px; /* Optional: Add rounded corners */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); /* Optional: Add a shadow for depth */
     text-align: center; /* Optional: Center the text */
@@ -86,7 +86,7 @@ body {
     width: 550px;
     position: absolute; /* Position relative to the parent container */
     top: 50%; /* Adjust as needed */
-    margin-left: 0px;
+    margin-left: 5%;
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
 .button-container {
@@ -107,10 +107,10 @@ body {
 
 #showImage{
     font-family: 'Courier New', Courier, monospace;
-    width: 20rem;
-    height: 5rem;
+    width: 18rem;
+    height: 4rem;
     background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -124,10 +124,10 @@ body {
 }
 #stop{
     font-family: 'Courier New', Courier, monospace;
-    width: 20rem;
-    height: 5rem;
+    width: 18rem;
+    height: 4rem;
     background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -150,7 +150,7 @@ body {
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     color: rgb(21, 3, 43);
     font-weight: 400;
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     margin-top: 100px;
 }
 .container {
@@ -168,7 +168,7 @@ body {
     max-width: 50%; 
     text-align: center; /* Center the text within the element */
     white-space: normal; /* Allow text wrapping */
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Open Sans';
     font-weight: lighter;
     color: rgb(81, 1, 71);
@@ -182,7 +182,7 @@ body {
     max-width: 50%; 
     text-align: center; /* Center the text within the element */
     white-space: normal; /* Allow text wrapping */
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Open Sans';
     font-weight: lighter;
     color: rgb(81, 1, 71);
@@ -196,7 +196,7 @@ body {
     max-width: 50%; 
     text-align: center; /* Center the text within the element */
     white-space: normal; /* Allow text wrapping */
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Open Sans';
     font-weight: lighter;
     color: rgb(81, 1, 71);
@@ -210,7 +210,7 @@ body {
     max-width: 50%; 
     text-align: center; /* Center the text within the element */
     white-space: normal; /* Allow text wrapping */
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Open Sans';
     font-weight: lighter;
     color: rgb(81, 1, 71);
@@ -281,7 +281,7 @@ body {
 }
 
 .logo {
-    height: 90px; /* Adjust the height as needed */
+    height: 80px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
 }
 .imgs {
@@ -296,14 +296,15 @@ body {
 
 /* Navbar styles */
 .navbar {
+
     background-color: black;
     z-index: 999;
     position: sticky;
     top: 0;
     align-items: center;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    height: 90px;
+    justify-content: flex-end; 
+    height: 80px;
     padding: 0 40px;
 }
 
@@ -325,7 +326,7 @@ body {
 
 .navbar_link {
     color: rgb(232, 169, 226);
-    font-size: 21px;
+    font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     display: flex;
@@ -336,6 +337,7 @@ body {
     height: 100%;
     position: relative; /* Ensure relative positioning for pseudo-elements */
     transition: color 0.3s;
+
 }
 
 .navbar_link:hover {
@@ -415,7 +417,7 @@ body {
     }
     .hamburger:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     .close-menu {
@@ -432,7 +434,7 @@ body {
     }
     .close-menu:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     /* Hide the hamburger icon and show the close icon when the menu is active */
@@ -456,15 +458,15 @@ body {
         flex-direction: column; /* Stack menu items vertically */
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
+        top: 80px; /* Adjust based on navbar height */
         right: 0;
         width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
+        height: calc(100vh - 80px); /* Full height minus navbar height */
         padding: 20px;
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 17px;
+        right: 15px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -474,7 +476,7 @@ body {
         position: relative;
         padding-left: 30px;
         box-sizing: border-box; 
-        font-size: 35px;
+        font-size: 25px;
     
     }
     .navbar_link::after {
@@ -522,8 +524,8 @@ body {
         gap: 200px; /* Adjust spacing if needed */
     }
     .navbar_menu.active ~ .imgs img{
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
