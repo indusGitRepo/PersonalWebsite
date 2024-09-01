@@ -1208,9 +1208,9 @@ body {
         display: flex;
         position: absolute;
         top: 650%; 
-        right: 3;
+        right: 2%;
         flex-direction: row;
-        gap: 100px;
+        gap: 90px;
     }
     .navbar_menu.active ~ .imgs img{
         height: 80px;
