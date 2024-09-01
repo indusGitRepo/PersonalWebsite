@@ -394,7 +394,7 @@ table, th, td {
     margin-left: 3%;
 }
 .square {
-    width: 550px;
+    width: 500px;
     height: 100px;
     background-color: #9ac2ff;
     z-index: 1;
@@ -421,7 +421,7 @@ table, th, td {
     background-color: #ffcb9a;
     position: relative;
     top: -560px; /* Reduced from -530px to bring closer */
-    right: -214%;
+    right: -210%;
 }
 
 .circle {
@@ -431,7 +431,7 @@ table, th, td {
     border-radius: 50%;
     position: relative;
     top: -220px; /* Adjusted from -200px to bring closer to the square */
-    right: -125%;
+    right: -120%;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -451,7 +451,7 @@ table, th, td {
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
     top: -50px; 
-    right: -70%;
+    right: -65%;
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
 }
 
@@ -474,7 +474,7 @@ table, th, td {
     margin: 0 auto; /* Center the line horizontally */
     position: relative; /* To position the arrow relative to the line */
     top: -400px; 
-    right: -135%;
+    right: -129%;
 }
 
 .connector2::after {
@@ -624,7 +624,7 @@ table, th, td {
     }
     .hamburger:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     .close-menu {
@@ -641,7 +641,7 @@ table, th, td {
     }
     .close-menu:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     /* Hide the hamburger icon and show the close icon when the menu is active */
@@ -665,15 +665,15 @@ table, th, td {
         flex-direction: column; /* Stack menu items vertically */
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
+        top: 80px; /* Adjust based on navbar height */
         right: 0;
         width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
+        height: calc(100vh - 80px); /* Full height minus navbar height */
         padding: 20px;
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 17px;
+        right: 15px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -683,7 +683,7 @@ table, th, td {
         position: relative;
         padding-left: 30px;
         box-sizing: border-box; 
-        font-size: 35px;
+        font-size: 25px;
     
     }
     .navbar_link::after {
@@ -705,7 +705,7 @@ table, th, td {
     .navbar_link::before {
         content: '';
         position: absolute;
-        top: 67px;
+        top: 52px;
         left: 30px;
         width: 0;
         height: 2px;
