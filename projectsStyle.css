@@ -555,13 +555,13 @@ table td, table th {
         transition: all 0.3s ease; /* Add transition for smooth animation */
     }
     #pool{
-        margin-left: -170px;
+        margin-left: -130px;
     }
     #mancala{
-        margin-left: -170px;
+        margin-left: -130px;
     }
     #web{
-        margin-left: -170px;
+        margin-left: -130px;
     }
 }
 @media (max-width: 1004px){
