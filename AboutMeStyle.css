@@ -333,7 +333,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 1.3rem;
     height: 100%;
     position: relative; /* Ensure relative positioning for pseudo-elements */
     transition: color 0.3s;
@@ -498,7 +498,7 @@ body {
     .navbar_link::before {
         content: '';
         position: absolute;
-        top: 67px;
+        top: 52px;
         left: 30px;
         width: 0;
         height: 2px;
@@ -533,7 +533,43 @@ body {
     }
     
 }
-
+/*test*/
+@media (max-width: 1004px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 650%; 
+        right: 10%; 
+        flex-direction: row;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+    
+}
+@media (max-width: 850px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 650%; 
+        right: 2%;
+        flex-direction: row;
+        gap: 90px;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 80px;
+        width: 80px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+}
 @media (max-height: 900px) {
     #button-container {
         margin-top: 20px; /* Increase the margin-top to prevent overlap */
@@ -625,7 +661,7 @@ body {
         width: 80%; 
     }
 }
-@media (max-width: 555px){
+@media (max-width: 484px){
     body {
         overflow-x: hidden; 
     }
