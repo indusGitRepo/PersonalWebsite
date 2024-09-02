@@ -361,7 +361,7 @@ nav ul li e::after{
     }
     .hamburger:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     .close-menu {
@@ -378,7 +378,7 @@ nav ul li e::after{
     }
     .close-menu:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     /* Hide the hamburger icon and show the close icon when the menu is active */
@@ -575,7 +575,7 @@ nav ul li e::after{
         transform: scale(1.6); 
     } */
     .contact-form-input {
-        width: 30rem;
+        width: 28rem;
     }
 } 
 @media (max-width: 1024px) {
