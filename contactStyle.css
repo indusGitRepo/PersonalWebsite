@@ -19,7 +19,7 @@ body {
     padding-bottom: 100px;
 }
 .logo {
-    height: 90px; /* Adjust the height as needed */
+    height: 80px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
 }
 .imgs {
@@ -39,7 +39,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
-    height: 90px;
+    height: 80px;
     padding: 0 40px;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .navbar_link {
     color: rgb(232, 169, 226);
-    font-size: 21px;
+    font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     display: flex;
@@ -103,7 +103,7 @@ body {
 
 .form-heading {
     font-family: 'Montserrat';
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 400;
     color: white;
     align-items: center;
@@ -116,7 +116,7 @@ body {
     color: rgb(101, 101, 101);
     text-align: center; 
     margin-top: 3%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .contact-form {
     display: flex;
@@ -128,8 +128,8 @@ body {
 .contact-form-input {
     padding-left: 30px; 
     text-align: left; /* You can keep text alignment left or right */
-    width: 60rem;
-    height: 5rem;
+    width: 55rem;
+    height: 4.8rem;
     padding-right: 10px;
     margin: 1rem 0;
     background-color: rgb(242, 242, 242);
@@ -149,12 +149,12 @@ body {
     color: rgb(117, 136, 150);
 }
 .contact-form-textarea{
-    height: 20rem;
+    height: 18rem;
     resize: none;
     padding: 1rem;
     padding-left: 30px; 
     text-align: left; /* You can keep text alignment left or right */
-    width: 60rem;
+    width: 55rem;
     padding-right: 10px;
     margin: 1rem 0;
     background-color: rgb(242, 242, 242);
@@ -402,15 +402,15 @@ nav ul li e::after{
         flex-direction: column; /* Stack menu items vertically */
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed; /* Fix position for menu */
-        top: 90px; /* Adjust based on navbar height */
+        top: 80px; /* Adjust based on navbar height */
         right: 0;
         width: 100%;
-        height: calc(100vh - 90px); /* Full height minus navbar height */
+        height: calc(100vh - 80px); /* Full height minus navbar height */
         padding: 20px;
         overflow-y: none; /* Scroll if content overflows */
         flex-direction: column;
         align-items: flex-start; 
-        right: 17px;
+        right: 15px;
     }
     .navbar_link {
         padding: 20px 0;
@@ -420,7 +420,7 @@ nav ul li e::after{
         position: relative;
         padding-left: 30px;
         box-sizing: border-box; 
-        font-size: 35px;
+        font-size: 25px;
     
     }
     .navbar_link::after {
@@ -442,7 +442,7 @@ nav ul li e::after{
     .navbar_link::before {
         content: '';
         position: absolute;
-        top: 67px;
+        top: 52px;
         left: 30px;
         width: 0;
         height: 2px;
@@ -502,14 +502,50 @@ nav ul li e::after{
         margin-left: -150px;
     }
 }
-@media (max-width: 1224px){
+@media (max-width: 1004px){
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; /* Adjust as needed */
-        right: 25%; /* Adjust as needed */
+        top: 650%; 
+        right: 10%; 
         flex-direction: row;
-        gap: 100px; /* Adjust spacing if needed */
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 100px;
+        width: 100px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+    
+}
+@media (max-width: 850px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 650%; 
+        right: 2%;
+        flex-direction: row;
+        gap: 90px;
+    }
+    .navbar_menu.active ~ .imgs img{
+        height: 80px;
+        width: 80px;
+    }
+    .navbar_menu.active ~ .imgs img:hover{
+        background-color: rgba(155, 117, 251, 0.395); 
+        transform: scale(1.6); 
+    }
+}
+/* @media (max-width: 1224px){
+    .navbar_menu.active ~ .imgs {
+        display: flex;
+        position: absolute;
+        top: 750%; 
+        right: 25%; 
+        flex-direction: row;
+        gap: 100px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;
@@ -525,10 +561,10 @@ nav ul li e::after{
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; /* Adjust as needed */
-        right: 10%; /* Adjust as needed */
+        top: 750%; 
+        right: 10%; 
         flex-direction: row;
-        gap: 100px; /* Adjust spacing if needed */
+        gap: 100px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 90px;
@@ -541,7 +577,7 @@ nav ul li e::after{
     .contact-form-input {
         width: 30rem;
     }
-}
+} */
 @media (max-width: 1024px) {
     .contact-form-input {
         max-width: 55rem; 
@@ -558,7 +594,7 @@ nav ul li e::after{
         max-width: 40rem; 
     }
 }
-@media (max-width: 555px){
+@media (max-width: 484px){
     .form-submit-btn{
         width: 16rem;
         height: 4rem;
