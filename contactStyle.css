@@ -540,7 +540,7 @@ nav ul li e::after{
 }
 @media (max-width: 563px){
     .navbar_menu.active ~ .imgs {
-       right: 15%;
+       right: -10%;
    }
 }
 /* @media (max-width: 1224px){
