@@ -575,7 +575,7 @@ nav ul li e::after{
         transform: scale(1.6); 
     } */
     .navbar_menu.active ~ .imgs {
-        right: -5%;
+        right: 5%;
     }
     .contact-form-input {
         width: 28rem;
