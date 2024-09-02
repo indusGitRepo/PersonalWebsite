@@ -538,6 +538,11 @@ nav ul li e::after{
         transform: scale(1.6); 
     }
 }
+@media (max-width: 563px){
+    .navbar_menu.active ~ .imgs {
+       right: 15%;
+   }
+}
 /* @media (max-width: 1224px){
     .navbar_menu.active ~ .imgs {
         display: flex;
