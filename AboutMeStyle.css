@@ -530,8 +530,8 @@ body {
         gap: 200px; /* Adjust spacing if needed */
     }
     .navbar_menu.active ~ .imgs img{
-        height: 90px;
-        width: 90px;
+        height: 100px;
+        width: 100px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
@@ -544,9 +544,10 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 650%; 
-        right: 10%; 
+        top: 750%; 
+        right: 25%; 
         flex-direction: row;
+        gap: 100px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;
@@ -567,8 +568,8 @@ body {
         gap: 60px; 
     }
     .navbar_menu.active ~ .imgs img{
-        height: 80px;
-        width: 80px;
+        height: 90px;
+        width: 90px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 

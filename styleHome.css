@@ -1168,14 +1168,14 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 650%; 
-        right: 25%; 
+        top: 750%; /* Adjust as needed */
+        right: 25%; /* Adjust as needed */
         flex-direction: row;
-        gap: 200px; 
+        gap: 200px; /* Adjust spacing if needed */
     }
     .navbar_menu.active ~ .imgs img{
-        height: 90px;
-        width: 90px;
+        height: 100px;
+        width: 100px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
@@ -1188,9 +1188,10 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 650%; 
-        right: 10%; 
+        top: 750%; 
+        right: 25%; 
         flex-direction: row;
+        gap: 100px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;
@@ -1212,8 +1213,8 @@ body {
         gap: 60px; 
     }
     .navbar_menu.active ~ .imgs img{
-        height: 80px;
-        width: 80px;
+        height: 90px;
+        width: 90px;
     }
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
@@ -1284,10 +1285,10 @@ body {
     }
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 600% !important;
-        right: 10 !important;
+        top: 600% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
         flex-direction: row;
-        gap: 30px; 
+        gap: 30px; /* Adjust spacing if needed */
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
@@ -1380,10 +1381,10 @@ body {
 
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 550% !important; 
-        right: 10 !important; 
+        top: 550% !important; /* Adjust as needed */
+        right: 10 !important; /* Adjust as needed */
         flex-direction: row;
-        gap: 30px; 
+        gap: 30px; /* Adjust spacing if needed */
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
@@ -1462,20 +1463,15 @@ body {
     }
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 700%; 
-        left: 20%;
+        top: 700%; /* Adjust as needed */
+        left: 20%; /* Adjust as needed */
         flex-direction: row;
-        gap: 100px; 
+        gap: 100px; /* Adjust spacing if needed */
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;
         width: 100px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395);
-    
-        transform: scale(1.6);
     }
     .navbar_link::after {
         content: '';
