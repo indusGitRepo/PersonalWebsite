@@ -423,7 +423,7 @@ table td, table th {
     }
     .hamburger:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     .close-menu {
@@ -440,7 +440,7 @@ table td, table th {
     }
     .close-menu:hover {
         background-color: #333; 
-        transform: scale(1.1); 
+        transform: scale(0.9); 
     }
     
     /* Hide the hamburger icon and show the close icon when the menu is active */
