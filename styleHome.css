@@ -1257,11 +1257,11 @@ body {
         flex-direction: column;
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed;
-        top: 90px;
+        top: 80px;
         right: 0;
         z-index: 1000; 
         width: 100%; 
-        height: calc(100vh - 90px); 
+        height: calc(100vh - 80px); 
         padding: 20px;
         overflow-y: auto; 
         overflow-x: hidden; 
@@ -1279,6 +1279,7 @@ body {
         box-sizing: border-box;
         font-size: 20px;
     }
+    
     .navbar_link::before {
         top: 47px;
     }
@@ -1347,11 +1348,11 @@ body {
         flex-direction: column;
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed;
-        top: 90px;
+        top: 80px;
         right: 0;
         z-index: 1000; 
         width: 100%; 
-        height: calc(100vh - 90px); 
+        height: calc(100vh - 80px); 
         padding: 20px;
         overflow-y: auto; 
         overflow-x: hidden; 
@@ -1430,14 +1431,14 @@ body {
         flex-direction: column;
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
         position: fixed;
-        top: 90px;
+        top: 80px;
         right: 0;
         z-index: 1000; 
         width: 100%; 
-        height: calc(100vh - 90px); 
+        height: calc(100vh - 80px); 
         padding: 20px;
         overflow-y: auto; 
-        overflow-x: hidden;
+        overflow-x: hidden; 
         box-sizing: border-box; 
         align-items: flex-start;
     }
