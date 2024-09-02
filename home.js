@@ -1,12 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const mobileMenu = document.querySelector('#mobile-menu');
-//     const navbarMenu = document.querySelector('.navbar_menu');
-
-//     mobileMenu.addEventListener('click', () => {
-//         mobileMenu.classList.toggle('is-active');
-//         navbarMenu.classList.toggle('active');
-//     });
-// });
 document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.navbar_menu').classList.add('active');
     document.querySelector('.hamburger').style.display = 'none'; // Hide hamburger

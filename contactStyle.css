@@ -2,8 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1001; /* Make sure it's above the navbar */
-     /* Add some padding if needed */
+    z-index: 1001; 
 }
 html, body {
     height: 100%;
@@ -19,8 +18,8 @@ body {
     padding-bottom: 100px;
 }
 .logo {
-    height: 80px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
+    height: 80px; 
+    width: auto; 
 }
 .imgs {
     display: flex;
@@ -28,8 +27,8 @@ body {
 }
 
 .imgs img {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 50px; 
+    height: 50px; 
 }
 .navbar {
     background-color: black;
@@ -70,7 +69,7 @@ body {
     text-decoration: none;
     padding: 0 1.3rem;
     height: 100%;
-    position: relative; /* Ensure relative positioning for pseudo-elements */
+    position: relative; 
     transition: color 0.3s;
 }
 
@@ -98,7 +97,7 @@ body {
 }
 
 .form-wrapper {
-    text-align: center; /* Center the text within the form wrapper */
+    text-align: center; 
 }
 
 .form-heading {
@@ -127,7 +126,7 @@ body {
 }
 .contact-form-input {
     padding-left: 30px; 
-    text-align: left; /* You can keep text alignment left or right */
+    text-align: left; 
     width: 55rem;
     height: 4.8rem;
     padding-right: 10px;
@@ -153,7 +152,7 @@ body {
     resize: none;
     padding: 1rem;
     padding-left: 30px; 
-    text-align: left; /* You can keep text alignment left or right */
+    text-align: left; 
     width: 55rem;
     padding-right: 10px;
     margin: 1rem 0;
@@ -196,159 +195,11 @@ body {
 .mancalaGame, .webGame{
     margin-top: -7%;
 }
-/* think about what you wanna do with the NEXT logo */
 
-/* .container{
-    position:absolute;
-    top:250px;
-    height:200px;
-    width:200px;
-    right:500px;
-}
-.header-text h1{
-    display: inline;
-    clear:none;
-    margin-top: 50px;
-    font-size: 100px;
-    color: rgb(255, 158, 231);
-    position: relative;
-    left: -1200px;
-    top: -450px;
-    overflow: hidden;
-    white-space: nowrap;
-} */
-
-/* ul a{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-    position:relative;
-    left: -1200px;
-}
-li{
-    list-style-type: none;
-    display:inline-block;
-    margin: 0 10px;
-} */
-/* nav ul li b{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-    position:relative;
-    left: -1000px;
-    top: -20px;
-    display: inline-block;
-    margin: 0 10px;
-}
-nav ul li c{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-    position:relative;
-    left: -800px;
-    top: -60px;
-    display: inline-block;
-    margin: 0 10px;
-}
-nav ul li d{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-    position:relative;
-    left: -600px;
-    top: -100px;
-    display: inline-block;
-    margin: 0 10px;
-}
-nav ul li e{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-    position:relative;
-    left: -400px;
-    top: -140px;
-    display: inline-block;
-    margin: 0 10px;
-} */
-/* #list li{
-    list-style-type: none;
-} */
-
-/* this is the part of the code which allows you to make the pink underline appear by hovering over the text*/
-/* nav ul li a:hover::after{
-    width: 100%;
-}
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #DDA0DD;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-} */
-
-/* this is the part of the code which allows you to make the pink underline appear by hovering over the text*/
-/* nav ul li b:hover::after{
-    width: 100%;
-}
-nav ul li b::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #DDA0DD;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li c:hover::after{
-    width: 100%;
-}
-nav ul li c::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #DDA0DD;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li d:hover::after{
-    width: 100%;
-}
-nav ul li d::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #DDA0DD;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li e:hover::after{
-    width: 100%;
-}
-nav ul li e::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #DDA0DD;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}  */
 
 @media (max-width: 1424px) {
-    /* Add padding to the bottom of the body to ensure the entire content is scrollable */
     body {
-        padding-bottom: 100px; /* Adjust this value as needed */
+        padding-bottom: 100px; 
     }
     .hamburger {
         display: block;
@@ -381,7 +232,6 @@ nav ul li e::after{
         transform: scale(0.9); 
     }
     
-    /* Hide the hamburger icon and show the close icon when the menu is active */
     .navbar_menu.active + .hamburger{
         display: none;
     }
@@ -390,24 +240,22 @@ nav ul li e::after{
         display: block;
     }
     
-    /* Show the menu when active */
-    /* Default styles for navbar menu */
     .navbar_menu {
-        display: none; /* Hidden by default */
+        display: none; 
     }
     
     /* When menu is active, display it */
     .navbar_menu.active {
-        display: flex; /* Adjust according to layout needs */
-        flex-direction: column; /* Stack menu items vertically */
+        display: flex; 
+        flex-direction: column; 
         background: linear-gradient(to left, rgb(0, 0, 0), rgb(47, 47, 47));
-        position: fixed; /* Fix position for menu */
-        top: 80px; /* Adjust based on navbar height */
+        position: fixed; 
+        top: 80px; 
         right: 0;
         width: 100%;
-        height: calc(100vh - 80px); /* Full height minus navbar height */
+        height: calc(100vh - 80px); 
         padding: 20px;
-        overflow-y: none; /* Scroll if content overflows */
+        overflow-y: none; 
         flex-direction: column;
         align-items: flex-start; 
         right: 16px;
@@ -453,19 +301,17 @@ nav ul li e::after{
     .navbar_link:hover::before {
         width: calc(100% - 30px);
     }
-    /* Default state: hide the images */
     .imgs {
         display: none;
     }
     
-    /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; /* Adjust as needed */
-        right: 25%; /* Adjust as needed */
+        top: 750%; 
+        right: 25%; 
         flex-direction: row;
-        gap: 200px; /* Adjust spacing if needed */
+        gap: 200px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;
@@ -490,7 +336,7 @@ nav ul li e::after{
         box-shadow: 5px 10px 10px rgb(0, 0, 0);
         margin-left: 20%;
         margin-top: 5%;
-        transition: all 0.3s ease; /* Add transition for smooth animation */
+        transition: all 0.3s ease; 
     }
     #pool{
         margin-left: -150px;
@@ -538,42 +384,10 @@ nav ul li e::after{
         transform: scale(1.6); 
     }
 }
-/* @media (max-width: 1224px){
-    .navbar_menu.active ~ .imgs {
-        display: flex;
-        position: absolute;
-        top: 750%; 
-        right: 25%; 
-        flex-direction: row;
-        gap: 100px; 
-    }
-    .navbar_menu.active ~ .imgs img{
-        height: 100px;
-        width: 100px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
-    }
-} */
+
 
 @media (max-width: 724px){
-    /* .navbar_menu.active ~ .imgs {
-        display: flex;
-        position: absolute;
-        top: 750%; 
-        right: 10%; 
-        flex-direction: row;
-        gap: 100px; 
-    }
-    .navbar_menu.active ~ .imgs img{
-        height: 90px;
-        width: 90px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
-    } */
+   
     .navbar_menu.active ~ .imgs {
         right: 9%;
     }
@@ -672,10 +486,10 @@ nav ul li e::after{
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 600% !important; /* Adjust as needed */
-        right: 10 !important; /* Adjust as needed */
+        top: 600% !important; 
+        right: 10 !important; 
         flex-direction: row;
-        gap: 30px; /* Adjust spacing if needed */
+        gap: 30px; 
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
@@ -737,10 +551,10 @@ nav ul li e::after{
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 700%; /* Adjust as needed */
-        left: 20%; /* Adjust as needed */
+        top: 700%;
+        left: 20%; 
         flex-direction: row;
-        gap: 100px; /* Adjust spacing if needed */
+        gap: 100px; 
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{
@@ -787,10 +601,10 @@ nav ul li e::after{
     /* Show images when the menu is active */
     .navbar_menu.active ~ .imgs {
         display: flex;
-        top: 550% !important; /* Adjust as needed */
-        right: 10 !important; /* Adjust as needed */
+        top: 550% !important; 
+        right: 10 !important; 
         flex-direction: row;
-        gap: 30px; /* Adjust spacing if needed */
+        gap: 30px; 
         z-index: 1000;
     }
     .navbar_menu.active ~ .imgs img{

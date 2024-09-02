@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function startAnimation(image) {
-        var finalPosition = 100; // Final horizontal position
-        var step = 5; // Pixels moved per interval
+        var finalPosition = 100; 
+        var step = 5; 
         var currentPosition = 0;
 
         var intervalId = setInterval(function() {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let navbarBottom = navbar.offsetTop + navbar.offsetHeight;
     
         // Position the star randomly across the window's width, a bit lower than the navbar
-        let offset = 360; // Adjust this value to set how much lower the stars start
+        let offset = 360; 
         star.style.left = Math.random() * window.innerWidth + 'px';
         star.style.top = (navbarBottom + offset) + 'px';
     
@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             clearInterval(starInterval);
         }
 
-        // Increase star creation frequency by reducing interval time
         starInterval = setInterval(createStar, 200); // Create a star every 200ms (5 stars per second)
     }
 
