@@ -506,10 +506,9 @@ nav ul li e::after{
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; 
-        right: 25%; 
+        top: 650%; 
+        right: 10%; 
         flex-direction: row;
-        gap: 100px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 100px;

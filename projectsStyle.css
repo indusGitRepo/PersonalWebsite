@@ -584,20 +584,20 @@ table td, table th {
 }
 @media (max-width: 850px){
     .navbar_menu.active ~ .imgs {
-        display: flex;
-        position: absolute;
-        top: 750%; 
-        flex-direction: row;
-        gap: 60px; 
-    }
-    .navbar_menu.active ~ .imgs img{
-        height: 80px;
-        width: 80px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
-    }
+       display: flex;
+       position: absolute;
+       top: 750%; 
+       flex-direction: row;
+       gap: 60px; 
+   }
+   .navbar_menu.active ~ .imgs img{
+       height: 90px;
+       width: 90px;
+   }
+   .navbar_menu.active ~ .imgs img:hover{
+       background-color: rgba(155, 117, 251, 0.395); 
+       transform: scale(1.6); 
+   }
 }
 
 /* @media (max-width: 1224px){
@@ -613,7 +613,7 @@ table td, table th {
         height: 100px;
         width: 100px;
     }
-    .navbar_menu.active ~ .imgs img:hover{
+     img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
     }
