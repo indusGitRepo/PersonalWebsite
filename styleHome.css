@@ -1168,7 +1168,7 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; /* Adjust as needed */
+        top: 650%; /* Adjust as needed */
         right: 25%; /* Adjust as needed */
         flex-direction: row;
         gap: 200px; /* Adjust spacing if needed */
@@ -1188,7 +1188,7 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; 
+        top: 650%; 
         right: 25%; 
         flex-direction: row;
         gap: 100px; 
@@ -1208,7 +1208,7 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 750%; 
+        top: 650%; 
         flex-direction: row;
         gap: 60px; 
     }
