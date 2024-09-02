@@ -555,10 +555,10 @@ nav ul li e::after{
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
     }
-}
+} */
 
 @media (max-width: 724px){
-    .navbar_menu.active ~ .imgs {
+    /* .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
         top: 750%; 
@@ -573,11 +573,11 @@ nav ul li e::after{
     .navbar_menu.active ~ .imgs img:hover{
         background-color: rgba(155, 117, 251, 0.395); 
         transform: scale(1.6); 
-    }
+    } */
     .contact-form-input {
         width: 30rem;
     }
-} */
+} 
 @media (max-width: 1024px) {
     .contact-form-input {
         max-width: 55rem; 
