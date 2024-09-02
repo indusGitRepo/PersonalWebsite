@@ -652,7 +652,7 @@ body {
 }
 @media (width: 540px){
     #animation {
-        top: -220% !important;
+        top: 10% !important;
     }
 }
 @media (width: 344px){
