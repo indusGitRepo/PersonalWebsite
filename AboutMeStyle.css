@@ -562,10 +562,9 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 650%; 
-        right: 2%;
+        top: 750%; 
         flex-direction: row;
-        gap: 90px;
+        gap: 60px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 80px;
@@ -612,24 +611,11 @@ body {
     }
 } */
 
-/* @media (max-width: 724px){
+@media (max-width: 724px){
     .navbar_menu.active ~ .imgs {
-        display: flex;
-        position: absolute;
-        top: 750%; 
-        right: 10%; 
-        flex-direction: row;
-        gap: 100px; 
+        right: 9%;
     }
-    .navbar_menu.active ~ .imgs img{
-        height: 90px;
-        width: 90px;
-    }
-    .navbar_menu.active ~ .imgs img:hover{
-        background-color: rgba(155, 117, 251, 0.395); 
-        transform: scale(1.6); 
-    }
-} */
+}
 @media (width: 430px){
     #animation {
         top: -50% !important;

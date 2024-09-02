@@ -1207,10 +1207,9 @@ body {
     .navbar_menu.active ~ .imgs {
         display: flex;
         position: absolute;
-        top: 650%; 
-        right: 2%;
+        top: 750%; 
         flex-direction: row;
-        gap: 90px;
+        gap: 60px; 
     }
     .navbar_menu.active ~ .imgs img{
         height: 80px;
@@ -1310,6 +1309,11 @@ body {
         background-color: rgba(255, 255, 255, 0.2);
     }
 
+}
+@media (max-width: 724px){
+    .navbar_menu.active ~ .imgs {
+        right: 9%;
+    }
 }
 @media (max-width: 380px){
     body {
