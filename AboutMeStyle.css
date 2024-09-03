@@ -481,10 +481,9 @@ body {
         position: absolute;
         bottom: 0;
         left: -2%;
-        width: 100vw - 6px; 
+        width: calc(100vw - 18px); 
         height: 1px;
-        /* background-color: rgba(255, 255, 255, 0.2);  */
-        background-color: rgb(255, 0, 0); 
+        background-color: rgba(255, 255, 255, 0.2); 
     }
     .navbar_link:hover {
         color: transparent;
