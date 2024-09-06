@@ -101,7 +101,7 @@ body {
     width: 100%;
 }
 #nutreco{
-    width: 520px;
+    width: 300px;
     height: auto;
 }
 #skillLogo{
@@ -151,25 +151,26 @@ table, th, td {
     font-size: 1.3rem;
 }
 
-.photos{
-    display: grid;
+.photos {
+    display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto; 
-    grid-template-areas:
-        "top top""bottom1 bottom2"; 
-        gap: 20px; 
-        max-width: 800px; 
-        margin: 0 5%; 
-    justify-items: center;
-    
+    grid-template-rows: auto; 
+    gap: 20px; 
+    max-width: 800px; 
+    margin: 3% 11%; 
+    justify-items: center; 
 }
+
 .Amino {
-    grid-area: top; 
-    width: 100%; 
+    max-width: 500px; 
+    height: auto;
 }
 .Excel {
-    grid-area: bottom1; 
     width: 100%; 
+}
+#Excel{
+    margin-top: 30%;
+    margin-left: 15%;
 }
 .AminoFlock { 
     grid-area: bottom2; 
@@ -226,7 +227,7 @@ table, th, td {
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744); 
 }
 .Amino.clicked{
-    transform: scale(1.3); 
+    transform: scale(1.2); 
     z-index: 1000; 
     box-shadow: 010px20pxrgba(0, 0, 0, 0.744);
 }
@@ -281,12 +282,15 @@ table, th, td {
     display: flex;
     flex-direction: column;
     gap: 90px; 
-    margin-top: -11%;
-    margin-left: 20%;
+    margin-top: -7.5%;
+    margin-left: 25%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     color: white;
     text-shadow: -3px 3px 8px #f8b8f6;
+}
+.set{
+    margin-top: -35px;
 }
 .skills{
     display: flex;
@@ -303,7 +307,7 @@ table, th, td {
     display: flex;
     flex-direction: column; 
     gap: 60px; 
-    margin-left: -100px;
+    margin-left: 30px;
 }
 .skillsLogo{
     display: flex;
@@ -709,9 +713,6 @@ table, th, td {
     .skillsLogo{
         display: none;
     }
-    #nutreco{
-        display: none;
-    }
 }
 /*test*/
 @media (max-width: 1004px){
@@ -752,38 +753,43 @@ table, th, td {
 }
 
 @media (max-width: 1590px) {
-    #AminoFlock, #Amino, #Excel{
+    #Amino, #Excel{
         max-width: 600px;
     }
 }
 @media (max-width: 1400px) {
     #AminoFlock, #Amino, #Excel{
-        max-width: 500px;
-    }
-}
-@media (max-width: 1200px) {
-    #AminoFlock, #Amino, #Excel{
-        max-width: 400px;
-    }
-}
-@media (max-width: 1000px) {
-    #AminoFlock, #Amino, #Excel{
-        max-width: 300px;
-    }
-}
-@media (max-width: 700px) {
-    #AminoFlock{
-        margin-top: 15%;
-    }
-    #Excel{
-        margin-left: 17%;
-    }
-    #Amino{
-        margin-left: 20%;
+        max-width: 600px;
     }
     .photos {
         display: flex;
         flex-direction: column;
+        margin: 0px 0px;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+@media (max-width: 1200px) {
+    #Amino{
+        max-width: 400px;
+    }
+    #Excel{
+        max-width: 500px;
+    }
+}
+@media (max-width: 650px) {
+    #Amino{
+        max-width: 300px;
+    }
+    #Excel{
+        max-width: 400px;
+    }
+}
+@media (max-width: 900px) {
+    .photos {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
     
@@ -791,7 +797,7 @@ table, th, td {
 @media (max-width: 1424px) {
 
     .Excel.clicked, .Amino.clicked, .AminoFlock.clicked{
-        transform: scale(1.3);
+        transform: scale(1.1);
         z-index: 1000; 
         box-shadow: 010px20pxrgba(0, 0, 0, 0.744); 
     }
