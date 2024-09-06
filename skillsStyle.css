@@ -282,7 +282,7 @@ table, th, td {
     display: flex;
     flex-direction: column;
     gap: 90px; 
-    margin-top: -8.5%;
+    margin-top: -8.4%;
     margin-left: 25%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
@@ -783,7 +783,7 @@ table, th, td {
     }
     #Excel{
         max-width: 400px;
-        margin-left: -5%;
+        margin-left: -4%;
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
@@ -844,8 +844,8 @@ table, th, td {
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
-        font-size: 12px; 
-        margin-left: 2%;
+        font-size: 10px; 
+        margin-left: 1%;
     }
     #AminoFlock, #Amino{
         width: 330px;
@@ -954,8 +954,8 @@ table, th, td {
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
-        font-size: 12px; 
-        margin-left: 2%;
+        font-size: 10px; 
+        margin-left: 1%;
     }
     #AminoFlock, #Amino{
         width: 330px;
@@ -1059,8 +1059,8 @@ table, th, td {
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
-        font-size: 12px; 
-        margin-left: 2%;
+        font-size: 10px; 
+        margin-left: 1%;
     }
     #AminoFlock, #Amino{
         width: 330px;
