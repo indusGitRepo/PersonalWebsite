@@ -783,7 +783,14 @@ table, th, td {
     }
     #Excel{
         max-width: 400px;
+        margin-left: -5%;
     }
+    .Exceltextbox, .Aminotextbox {
+        width: 500px; 
+        font-size: 10px; 
+        margin-left: 1%;
+    }
+    
 }
 @media (max-width: 900px) {
     .photos {
