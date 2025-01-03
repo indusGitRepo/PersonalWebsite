@@ -356,6 +356,47 @@ table, th, td {
     text-align: center; 
     margin-top: 15%;
 }
+.lined-paper {
+    background: linear-gradient(to bottom, #fff 34px, #e3e3e3 35px);
+    background-size: 100% 35px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.lined-paper h1 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.goal-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    line-height: 35px; /* Matches the line height with the paper's background lines */
+}
+
+.goal-list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.goal-list li:before {
+    content: "•";
+    color: #333;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .flowchart-goals {
     display: flex;
     flex-direction: column;
