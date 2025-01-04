@@ -327,7 +327,7 @@ table, th, td {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     margin-left: 20%;
-    margin-top: -20%;
+    margin-top: 10%;
     transition: color 0.3s;
     font-size: 2rem;
     color: #272626;
@@ -357,45 +357,76 @@ table, th, td {
     margin-top: 15%;
 }
 .lined-paper {
-    background: linear-gradient(to bottom, #fff 34px, #e3e3e3 35px);
+    background: linear-gradient(to bottom, #fff 34px, #080706 35px); /* Peachy paper lines */
     background-size: 100% 35px;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
     padding: 20px;
-    border: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #5d02c5; /* Bold, bright border */
+    border-radius: 15px; /* Rounded corners for a softer, cartoon vibe */
+    box-shadow: 0 8px 16px rgb(255, 255, 255); /* Bigger shadow for depth */
     position: relative;
+    transform: rotate(-2deg); /* Slight tilt for a playful effect */
+    margin-top: -25%;
+    margin-left: 20%;
 }
 
 .lined-paper h1 {
     text-align: center;
-    font-size: 1.8em;
-    color: #333;
+    font-size: 2em;
+    color: #ff479a; /* Vibrant red-orange for the heading */
     margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 4px dashed #6600ff; /* Dashed line for a doodle-like look */
     padding-bottom: 10px;
+    text-shadow: 2px 2px #e5c0ff; /* Adds a cartoon-style shadow */
 }
 
 .goal-list {
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
-    line-height: 35px; /* Matches the line height with the paper's background lines */
+    line-height: 35px; /* Matches the background lines */
 }
 
 .goal-list li {
     position: relative;
-    padding-left: 20px;
+    padding-left: 45px; /* Extra padding for fun markers */
+    font-size: 1.2em;
+
+    margin-top: 2%;
+    color: #333;
+}
+.goal-list .reflection {
+    margin-left: 100px; 
+}
+.goal-list li.reflection::before {
+    content: "\003F "; 
+    color: #38b619;    
+    font-weight: bold; 
+    margin-right: 5px;
+    text-shadow: 2px 2px #0000006d;
+    font-size: 1.7em;
 }
 
+.goal-list .action {
+    margin-left: 50px; 
+}
+.goal-list li.action::before {
+    content: "\2611 "; 
+    color: #ef15e1;    
+    font-weight: bold; 
+    margin-right: 5px;
+    text-shadow: 2px 2px #0000006d;
+    font-size: 1.7em;
+}
 .goal-list li:before {
-    content: "•";
-    color: #333;
-    font-size: 1.2em;
+    content: "★"; /* Star instead of a bullet */
+    color: #ffd700; /* Golden star color */
+    font-size: 1.5em;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
+    text-shadow: 2px 2px #ff4500; /* Fun shadow effect for the stars */
 }
 .flowchart-goals {
     display: flex;
@@ -571,7 +602,7 @@ table, th, td {
     padding: 0 20px;
 }
 
-#para, #para2, #para3, #para4 {
+#para, #para2, #para3, #para4, #para5 {
     color: rgb(59, 0, 37);
     font-family: 'Open Sans';
     font-size: 1rem;
@@ -592,7 +623,9 @@ table, th, td {
     text-indent: 20px;
     text-align: center; 
 }
-
+#para5{
+    margin-top: -5%;
+}
 
 * {
     box-sizing: border-box;
@@ -617,6 +650,9 @@ table, th, td {
     }
     .flowchart-goals {
         display: none;
+    }
+    .lined-paper{
+        display:none;
     }
     #mobile{
         display: none;
