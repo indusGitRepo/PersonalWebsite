@@ -491,12 +491,18 @@ table, th, td {
     margin-top: 10%;
     text-indent: 0;
 }
+
 #disclaimer2{
     color: rgb(148, 5, 5);
-    margin-top: 3%;
-    text-indent: 0;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    margin-left: 20%;
+    margin-top: 10%;
+    max-width: 50%;
 }
-#disclaimer, #mobile, #disclaimer2{
+
+#disclaimer, #mobile{
     font-size: 1rem;
 }
 #action {
@@ -593,13 +599,13 @@ table, th, td {
 #folder2{
     width: 70px;
     height: auto;
-    margin-left: 35%;
-    margin-top: -4%;
+    margin-left: 70%;
+    margin-top: -15%;
     box-shadow: 5px 10px 10px rgb(0, 0, 0);
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
-#folder:hover, #folder2:hover {
+#folder:hover, #folder2:hover{
     box-shadow: 10px 15px 15px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255); 
     transform: scale(1.1); 
 }
@@ -937,11 +943,28 @@ table, th, td {
     body {
         overflow-x: hidden; 
     }
-    #folder {
+    #folder{
         width: 50px;
         height: auto;
         margin-left: 10%;
         margin-top: 10%;
+    }
+    #folder2{
+        width: 70px;
+        height: auto;
+        margin-left: 75%;
+        margin-top: -40%;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+        transition: all 0.3s ease; 
+    }
+    #disclaimer2{
+        color: rgb(148, 5, 5);
+        margin-top: -25%;
+        padding: 0 20px;
+        margin-left: 25%;
+        max-width: 50%;
+        font-size: 1rem;
+        font-family: 'Montserrat';
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
@@ -1047,11 +1070,28 @@ table, th, td {
     body {
         overflow-x: hidden; 
     }
-    #folder {
+    #folder{
         width: 80px;
         height: auto;
         margin-left: 10%;
         margin-top: 10%;
+    }
+    #folder2{
+        width: 70px;
+        height: auto;
+        margin-left: 75%;
+        margin-top: -40%;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+        transition: all 0.3s ease; 
+    }
+    #disclaimer2{
+        color: rgb(148, 5, 5);
+        margin-top: -25%;
+        padding: 0 20px;
+        margin-left: 25%;
+        max-width: 50%;
+        font-size: 1rem;
+        font-family: 'Montserrat';
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
@@ -1152,11 +1192,28 @@ table, th, td {
         font-family: 'Montserrat';
         font-size: 1rem;
     }
-    #folder {
+    #folder{
         width: 80px;
         height: auto;
         margin-left: 10%;
         margin-top: 10%;
+    }
+    #folder2{
+        width: 70px;
+        height: auto;
+        margin-left: 75%;
+        margin-top: -40%;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+        transition: all 0.3s ease; 
+    }
+    #disclaimer2{
+        color: rgb(148, 5, 5);
+        margin-top: -25%;
+        padding: 0 20px;
+        margin-left: 25%;
+        max-width: 50%;
+        font-size: 1rem;
+        font-family: 'Montserrat';
     }
     .Exceltextbox, .Aminotextbox {
         width: 500px; 
