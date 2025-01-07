@@ -333,6 +333,16 @@ table, th, td {
     color: #272626;
     text-shadow: 2px 2px 2px white;
 }
+.Acknowledgments{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-top: 10%;
+    transition: color 0.3s;
+    font-size: 2rem;
+    color: #272626;
+    text-shadow: 2px 2px 2px white;
+}
 .goals{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
@@ -357,16 +367,16 @@ table, th, td {
     margin-top: 15%;
 }
 .lined-paper {
-    background: linear-gradient(to bottom, #fff 34px, #080706 35px); /* Peachy paper lines */
+    background: linear-gradient(to bottom, #fff 34px, #080706 35px); 
     background-size: 100% 35px;
     width: 100%;
     max-width: 1000px;
     padding: 20px;
-    border: 5px solid #5d02c5; /* Bold, bright border */
-    border-radius: 15px; /* Rounded corners for a softer, cartoon vibe */
-    box-shadow: 0 8px 16px rgb(255, 255, 255); /* Bigger shadow for depth */
+    border: 5px solid #5d02c5; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgb(255, 255, 255); 
     position: relative;
-    transform: rotate(-2deg); /* Slight tilt for a playful effect */
+    transform: rotate(-2deg); 
     margin-top: -25%;
     margin-left: 18%;
 }
@@ -374,22 +384,22 @@ table, th, td {
 .lined-paper h1 {
     text-align: center;
     font-size: 2em;
-    color: #ff479a; /* Vibrant red-orange for the heading */
+    color: #ff479a; 
     margin-bottom: 20px;
-    border-bottom: 4px dashed #6600ff; /* Dashed line for a doodle-like look */
+    border-bottom: 4px dashed #6600ff; 
     padding-bottom: 10px;
-    text-shadow: 2px 2px #e5c0ff; /* Adds a cartoon-style shadow */
+    text-shadow: 2px 2px #e5c0ff; 
 }
 
 .goal-list {
     list-style-type: none;
     padding-left: 0;
-    line-height: 35px; /* Matches the background lines */
+    line-height: 35px; 
 }
 
 .goal-list li {
     position: relative;
-    padding-left: 45px; /* Extra padding for fun markers */
+    padding-left: 45px; 
     font-size: 1.2em;
 
     margin-top: 2%;
@@ -419,14 +429,14 @@ table, th, td {
     font-size: 1.7em;
 }
 .goal-list li:before {
-    content: "★"; /* Star instead of a bullet */
-    color: #ffd700; /* Golden star color */
+    content: "★"; 
+    color: #ffd700; 
     font-size: 1.5em;
     position: absolute;
     left: 0;
     top: 40%;
     transform: translateY(-50%);
-    text-shadow: 2px 2px #ff4500; /* Fun shadow effect for the stars */
+    text-shadow: 2px 2px #ff4500; 
 }
 .flowchart-goals {
     display: flex;
@@ -481,7 +491,12 @@ table, th, td {
     margin-top: 10%;
     text-indent: 0;
 }
-#disclaimer, #mobile{
+#disclaimer2{
+    color: rgb(148, 5, 5);
+    margin-top: 3%;
+    text-indent: 0;
+}
+#disclaimer, #mobile, #disclaimer2{
     font-size: 1rem;
 }
 #action {
@@ -566,7 +581,7 @@ table, th, td {
     right: -10px; 
     transform: translateY(-40%); 
 }
-#folder {
+#folder{
     width: 70px;
     height: auto;
     margin-left: 100%;
@@ -575,7 +590,16 @@ table, th, td {
     transition: all 0.3s ease; 
 }
 
-#folder:hover {
+#folder2{
+    width: 70px;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -4%;
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    transition: all 0.3s ease; 
+}
+
+#folder:hover, #folder2:hover {
     box-shadow: 10px 15px 15px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255); 
     transform: scale(1.1); 
 }
@@ -602,7 +626,7 @@ table, th, td {
     padding: 0 20px;
 }
 
-#para, #para2, #para3, #para4, #para5 {
+#para, #para2, #para3, #para4, #para5, #paraCon1, #paraCon2, #Acknowledgments {
     color: rgb(59, 0, 37);
     font-family: 'Open Sans';
     font-size: 1rem;
