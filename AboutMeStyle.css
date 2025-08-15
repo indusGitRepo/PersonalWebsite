@@ -83,9 +83,9 @@ body {
 }
 #animation {
     animation: photo-animation 3s infinite;
-    width: 300px !important;
+    width: 250px !important;
     position: absolute; 
-    top: 50%;
+    top: 35% !important;
     margin-left: 0;
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }

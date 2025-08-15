@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function startAnimation(image) {
-        var finalPosition = 100; 
+        var finalPosition = 250; 
         var step = 5; 
         var currentPosition = 0;
 
