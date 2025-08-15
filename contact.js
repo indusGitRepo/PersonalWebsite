@@ -39,7 +39,7 @@ function toggleClass() {
     document.querySelector('.imgs').classList.toggle('active');
 }
 
-// Select the images by their classes
+// Select the images by their classe
 const image1 = document.querySelector('.Amino');
 const image2 = document.querySelector('.Excel');
 const image3 = document.querySelector('.AminoFlock');
