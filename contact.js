@@ -44,7 +44,7 @@ const image1 = document.querySelector('.Amino');
 const image2 = document.querySelector('.Excel');
 const image3 = document.querySelector('.AminoFlock');
 
-// Add event listeners to each image
+// Add event listeners to each imag
 image1.addEventListener('click', () => {
     image1.classList.toggle('clicked');
 });
