@@ -83,7 +83,7 @@ body {
 }
 #animation {
     animation: photo-animation 3s infinite;
-    width: 600px;
+    width: 30px;
     position: absolute; 
     top: 50%;
     margin-left: 0;
