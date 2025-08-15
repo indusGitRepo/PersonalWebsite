@@ -20,20 +20,27 @@ body {
     max-width: 700px; 
     margin: 400px 200px; 
     min-width: 300px; 
-    align-items: center;
+    align-items: start;
 }
 
 
-.photos #frens, #GCG24, #GCG23 {
+.photos #frens, #GCG24, #GCG23, #frens2025 {
     width: 90%; 
-    height: auto; 
     object-fit: cover; 
     border-radius: 1rem;
     border: 5px solid #000;
     border-radius: 10px;
     
 }
+#frens2025 {
+    grid-column: 2; 
+    grid-row: 3;    
+}
+
 #frens:hover{
+    border: 5px solid rgb(205, 35, 35);
+}
+#frens2025:hover{
     border: 5px solid rgb(205, 35, 35);
 }
 #GCG24:hover{
@@ -45,9 +52,8 @@ body {
 #nature:hover{
     border: 5px solid rgb(205, 35, 35);
 }
-#nature{
-    width: 90%; 
-    height: 455px; 
+#nature, #GCG23, #frens2025{
+    width: 100%; 
     object-fit: cover;
     border-radius: 1rem;
     border: 5px solid rgb(0, 0, 0); 
@@ -69,6 +75,17 @@ body {
     height: auto; 
     object-fit: cover; 
 }
+
+.photos img:nth-child(4){
+    margin-top: -150px; 
+}
+.photos img:nth-child(5) {
+    margin-top: -135px; /* adjust number to move closer */
+}
+.photos img:nth-child(1), .photos img:nth-child(3) {
+    margin-top: 50px; 
+}
+
 .colorful-textbox {
     width: 380px;
     padding: 35px; 
