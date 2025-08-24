@@ -257,6 +257,27 @@ table, th, td {
     margin-left: 10%;
     
 }
+.SLtxtBoxContainer {
+    display: flex;
+    margin: 20px0;
+    gap: 12%;
+    position: relative;
+}
+
+.SLExceltextbox {
+    width: 800px; 
+    padding: 40px; 
+    background-color: #b5e4ff;
+    color: rgb(153, 75, 255); 
+    font-size: 16px;  
+    border-radius: 10px; 
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.787); 
+    text-align: center; 
+    font-family: 'Montserrat';
+    position: center;
+    margin-left: 20%;
+    
+}
 .Aminotextbox {
     width: 800px; 
     padding: 40px; 
@@ -309,6 +330,13 @@ table, th, td {
     gap: 60px; 
     margin-left: 30px;
 }
+.SL-logos {
+    display: flex;
+    flex-direction: column; 
+    gap: 60px; 
+    margin-left: 30px;
+    margin-top: 30%;
+}
 .skillsLogo{
     display: flex;
     margin-left: 90px;
@@ -327,7 +355,16 @@ table, th, td {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: -30%;
+    transition: color 0.3s;
+    font-size: 2rem;
+    color: #272626;
+    text-shadow: 2px 2px 2px white;
+}
+.SLcon{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20%;
     transition: color 0.3s;
     font-size: 2rem;
     color: #272626;
@@ -642,6 +679,17 @@ table, th, td {
     max-width: 50%;
     text-indent: 60px;
 }
+#SLparaCon1, #SLparaCon2{
+    color: rgb(59, 0, 37);
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    margin: 5px 0 5px 25%;
+    margin-left: 25%;
+    word-wrap: break-word;
+    max-width: 50%;
+    text-indent: 60px;
+    margin-top: -10%;
+}
 
 #para1 {
     color: rgb(59, 0, 37);
@@ -687,7 +735,7 @@ table, th, td {
     #mobile{
         display: none;
     }
-    .con{
+    .con, .SLcon{
         margin-top: 10%;
     }
     .colorful-textbox {
@@ -892,10 +940,13 @@ table, th, td {
         max-width: 400px;
         margin-left: 0px;
     }
-    .Exceltextbox, .Aminotextbox {
+    .Exceltextbox, .Aminotextbox, .SLExceltextbox {
         width: 500px; 
         font-size: 11px; 
         margin-left: 1%;
+    }
+    .goalButton{
+        margin-left: -30%;
     }
     
 }
@@ -914,6 +965,9 @@ table, th, td {
         transform: scale(1.1);
         z-index: 1000; 
         box-shadow: 010px20pxrgba(0, 0, 0, 0.744); 
+    }
+    .goalButton{
+        margin-left: -30%;
     }
 }
 @media (max-width: 1200px) {
@@ -966,10 +1020,13 @@ table, th, td {
         font-size: 1rem;
         font-family: 'Montserrat';
     }
-    .Exceltextbox, .Aminotextbox {
+    .Exceltextbox, .Aminotextbox, .SLExceltextbox {
         width: 500px; 
         font-size: 11px; 
         margin-left: 1%;
+    }
+    .goalButton{
+        margin-left: -30%;
     }
     #AminoFlock, #Amino{
         width: 330px;
@@ -983,7 +1040,7 @@ table, th, td {
     .photos {
         margin: 100px -15px;
     }
-    .subtitle, .goals, .con{
+    .subtitle, .goals, .con, .SLcon{
         margin-left: 0;
         font-size: 2rem;
     }
@@ -1093,10 +1150,13 @@ table, th, td {
         font-size: 1rem;
         font-family: 'Montserrat';
     }
-    .Exceltextbox, .Aminotextbox {
+    .Exceltextbox, .Aminotextbox, .SLExceltextbox {
         width: 500px; 
         font-size: 11px; 
         margin-left: 1%;
+    }
+    .goalButton{
+        margin-left: -30%;
     }
     #AminoFlock, #Amino{
         width: 330px;
@@ -1110,7 +1170,7 @@ table, th, td {
     .photos {
         margin: 100px -15px; 
     }
-    .subtitle, .goals, .con{
+    .subtitle, .goals, .con, .SLcon{
         margin-left: 0;
         font-size: 2.7rem;
     }
@@ -1215,10 +1275,13 @@ table, th, td {
         font-size: 1rem;
         font-family: 'Montserrat';
     }
-    .Exceltextbox, .Aminotextbox {
+    .Exceltextbox, .Aminotextbox, .SLExceltextbox{
         width: 500px; 
         font-size: 11px; 
         margin-left: 1%;
+    }
+    .goalButton{
+        margin-left: -30%;
     }
     #AminoFlock, #Amino{
         width: 330px;
@@ -1232,7 +1295,7 @@ table, th, td {
     .photos {
         margin: 100px -15px; 
     }
-    .subtitle, .goals, .con{
+    .subtitle, .goals, .con, .SLcon{
         margin-left: 0;
         font-size: 2rem;
     }
@@ -1314,4 +1377,130 @@ table, th, td {
         background-color: rgba(255, 255, 255, 0.2);
     }
 
+}
+/* SLphotos Section Styles */
+.SLphotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.CI1, .CI2 {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.CI1:hover, .CI2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+#CI1, #CI2 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+#CI1:hover, #CI2:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for SLphotos */
+@media (max-width: 1024px) {
+    .SLphotos {
+        max-width: 800px;
+        gap: 25px;
+    }
+    
+    #CI1, #CI2 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .SLphotos {
+        max-width: 700px;
+        gap: 20px;
+    }
+    
+    #CI1, #CI2 {
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SLphotos {
+        max-width: 600px;
+        gap: 18px;
+        margin: 60px auto;
+    }
+    
+    #CI1, #CI2 {
+        height: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+    .SLphotos {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 25px;
+    }
+    
+    #CI1, #CI2 {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .SLphotos {
+        max-width: 400px;
+        gap: 20px;
+        margin: 50px auto;
+        padding: 0 15px;
+    }
+    
+    #CI1, #CI2 {
+        height: 220px;
+    }
+}
+
+@media (max-width: 360px) {
+    .SLphotos {
+        max-width: 320px;
+        gap: 18px;
+    }
+    
+    #CI1, #CI2 {
+        height: 200px;
+    }
+}
+
+.goalButton a {
+    display: inline-block;
+    padding: 20px 30px;
+    background-image: linear-gradient(to right, rgb(164, 116, 241), rgb(254, 125, 205)); 
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 35%;
+    margin-top: -10%;
+}
+
+.goalButton a:hover {
+    filter: brightness(1.1);
 }
