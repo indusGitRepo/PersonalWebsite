@@ -680,8 +680,7 @@ table, th, td {
     padding: 0 20px;
 }
 
-#para, #para2, #para3, #para4, #para5, #paraCon1, #paraCon2, #Acknowledgments, #SLparaCon1,
-#SLparaCon2 {
+#para, #para2, #para3, #para4, #para5, #paraCon1, #paraCon2, #Acknowledgments {
     color: rgb(59, 0, 37);
     font-family: 'Open Sans';
     font-size: 1rem;
@@ -691,7 +690,7 @@ table, th, td {
     max-width: 50%;
     text-indent: 60px;
 }
-/* #SLparaCon1,
+#SLparaCon1,
 #SLparaCon2 {
     color: rgb(59, 0, 37);
     font-family: 'Open Sans';
@@ -701,15 +700,15 @@ table, th, td {
     text-indent: 60px;
     margin-left: 25%;
 
-    /* Vertical spacing 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* Vertical spacing */
+    margin-top: -90px;
+    margin-bottom: 0px;
 }
 
-/* Add extra space above the first paragraph only 
+/* Add extra space above the first paragraph only */
 #SLparaCon1 {
-    margin-top: 40px;
-} */
+    margin-top: -100px;
+} 
 
 
 #para1 {
