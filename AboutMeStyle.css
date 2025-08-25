@@ -607,16 +607,6 @@ body {
         top: -50% !important;
     }
 }
-@media (width: 414px){
-    #animation {
-        top: -30% !important;
-    }
-}
-@media (width: 412px){
-    #animation {
-        top: -25% !important;
-    }
-}
 @media (width: 360px){
     #animation {
         top: 35% !important;
@@ -1083,3 +1073,10 @@ body {
     }
     
 }
+@media screen and (max-width: 414px) {
+    #animation {
+      top: -40% !important;  /* Move closer to bottom */
+      transform: translateX(50%); 
+    }
+  }
+  
