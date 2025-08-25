@@ -699,6 +699,7 @@ table, th, td {
     word-wrap: break-word;
     max-width: 50%;
     text-indent: 60px;
+    margin-top: -5%;
 }
 
 #para1 {
