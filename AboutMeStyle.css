@@ -1081,7 +1081,7 @@ body {
   }
 @media screen and (max-width: 480px) {
     #animation {
-        top: -40% !important;  /* Move closer to bottom */
+        top: -30% !important;  /* Move closer to bottom */
         transform: translateX(50%); 
     }
 }
