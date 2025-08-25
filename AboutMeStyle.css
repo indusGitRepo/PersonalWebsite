@@ -1081,7 +1081,7 @@ body {
   }
   @media screen and (max-width: 412px) {
     #animation {
-      top: 12% !important;  
+      top: -20% !important;  
       transform: translateX(50%); 
     }
   }
@@ -1093,7 +1093,7 @@ body {
   }
 @media screen and (max-width: 480px) {
     #animation {
-        top: 35% !important;  
+        top: -25% !important;  
         transform: translateX(50%); 
     }
 }
