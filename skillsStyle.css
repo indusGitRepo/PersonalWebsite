@@ -691,13 +691,15 @@ table, th, td {
     text-indent: 60px;
 }
 #SLparaCon1, #SLparaCon2{
+    color: rgb(59, 0, 37);
     font-family: 'Open Sans';
     font-size: 1rem;
-    margin: 10px 0;
+    margin: 5px 0 5px 25%;
     margin-left: 25%;
     word-wrap: break-word;
     max-width: 50%;
     text-indent: 60px;
+    margin-top: -10%;
 }
 
 #para1 {
