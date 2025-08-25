@@ -695,16 +695,16 @@ table, th, td {
     color: rgb(59, 0, 37);
     font-family: 'Open Sans';
     font-size: 1rem;
-    margin: 20px 0 20px 25%; /* Increased vertical spacing */
+    margin: 20px 0 20px 35%; /* Increased vertical spacing */
     margin-left: 25%;
     word-wrap: break-word;
     max-width: 50%;
     text-indent: 60px;
 }
 
-/* Specific margin above first paragraph */
+
 #SLparaCon1 {
-    margin-top: 40px; /* Adjust as needed for more space above */
+    margin-top: 10%; 
 }
 
 
