@@ -103,7 +103,7 @@ body {
     width: 250px !important;
     position: absolute; 
     top: 35% !important;
-    margin-left: 0;
+    margin-left: -5% !important;
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
 .button-container {
@@ -598,6 +598,9 @@ body {
     .navbar_menu.active ~ .imgs {
         right: 9%;
     }
+    #animation{
+        margin-left: -20% !important;
+    }
 }
 @media (width: 430px){
     #animation {
@@ -732,7 +735,6 @@ body {
 
 }
 @media (width: 768px){
-
     body {
         overflow-x: hidden; 
     }
@@ -822,6 +824,7 @@ body {
 }
 
 @media (max-width: 380px){
+    
     body {
         overflow-x: hidden; 
     }
@@ -922,17 +925,22 @@ body {
 }
 /* Add these media queries to your existing CSS */
 
-/* For screens with reduced height */
 @media (max-height: 800px) {
     #animation {
+        top: 17% !important;
+        height: 350px !important;
+        width: 200px !important;
+    }
+    /* Use a wrapper for scaling without affecting animation */
+    .animation-wrapper {
         transform: scale(0.9);
-        top: 20% !important;
     }
 }
+
 @media (min-width: 380px) {
-    #animation {
-        transform: scale(0.9);
-        left: 25% !important
+    /* Use a wrapper for positioning without affecting animation */
+    .animation-wrapper {
+        left: 25% !important;
     }
 }
 
@@ -960,6 +968,7 @@ body {
     }
 }
 @media (max-width: 900px) {
+    
     .photos {
         margin: 200px auto; /* Center the grid and reduce top margin */
         max-width: 600px;
@@ -995,9 +1004,8 @@ body {
         grid-template-columns: 1fr;
         max-width: 400px;
         gap: 20px;
-        margin: 50px auto;
+        margin: 650px auto 50px !important; 
         padding: 0 20px;
-        
     }
     
     .photos img {
@@ -1013,7 +1021,24 @@ body {
     .pop-image.clicked {
         transform: scale(1.15);
     }
+    
+    #animation {
+        width: 150px !important;
+        height: 250px !important;
+        top: 10% !important;
+        left: 70% !important;
+        transform: translateX(-50%) !important;
+        z-index: 20;
+    }
+    
+    .button-container1 {
+        top: 45% !important;
+        left: -5% !important;
+        gap: 15px;
+        width: 400px;
+    }
 }
+
 
 /* For small mobile devices */
 @media (max-width: 400px) {
@@ -1043,6 +1068,7 @@ body {
     .pop-image.clicked {
         transform: scale(1.1);
     }
+    
 }
 
 /* For very small devices */
@@ -1055,4 +1081,5 @@ body {
     .photos img {
         height: 140px;
     }
+    
 }
