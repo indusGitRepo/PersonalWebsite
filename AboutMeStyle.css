@@ -1079,9 +1079,9 @@ body {
       transform: translateX(50%); 
     }
   }
-  @media screen and (width: 412px) {
+  @media screen and (max-width: 412px) {
     #animation {
-      top: -35% !important;  
+      top: 35% !important;  
       transform: translateX(50%); 
     }
   }
