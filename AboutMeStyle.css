@@ -1079,9 +1079,9 @@ body {
       transform: translateX(50%); 
     }
   }
-@media screen and (max-width: 75.7px) {
+@media screen and (max-width: 480px) {
     #animation {
-      top: -1000% !important;  /* Move closer to bottom */
-      transform: translateX(50%); 
+        top: -40% !important;  /* Move closer to bottom */
+        transform: translateX(50%); 
     }
 }
