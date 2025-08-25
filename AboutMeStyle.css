@@ -1075,13 +1075,13 @@ body {
 }
 @media screen and (max-width: 414px) {
     #animation {
-      top: -40% !important;  /* Move closer to bottom */
+      top: -40% !important;  
       transform: translateX(50%); 
     }
   }
 @media screen and (max-width: 480px) {
     #animation {
-        top: -30% !important;  /* Move closer to bottom */
+        top: -15% !important;  
         transform: translateX(50%); 
     }
 }
