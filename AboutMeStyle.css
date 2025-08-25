@@ -1075,19 +1075,19 @@ body {
 }
 @media screen and (width: 414px) {
     #animation {
-      top: -40% !important;  
+      top: -35% !important;  
       transform: translateX(50%); 
     }
   }
   @media screen and (width: 412px) {
     #animation {
-      top: -40% !important;  
+      top: -35% !important;  
       transform: translateX(50%); 
     }
   }
   @media screen and (max-width: 360px) {
     #animation {
-      top: -30% !important;  
+      top: -10% !important;  
       transform: translateX(50%); 
     }
   }
@@ -1099,7 +1099,7 @@ body {
 }
 @media screen and (width: 430px) {
     #animation {
-        top: -40% !important;  
+        top: -80% !important;  
         transform: translateX(50%); 
     }
 }
