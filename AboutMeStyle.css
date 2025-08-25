@@ -1073,13 +1073,13 @@ body {
     }
     
 }
-@media screen and (max-width: 414px) {
+@media screen and (width: 414px) {
     #animation {
       top: 70% !important;  
       transform: translateX(50%); 
     }
   }
-@media screen and (max-width: 480px) {
+@media screen and (width: 480px) {
     #animation {
         top: 15% !important;  
         transform: translateX(50%); 
