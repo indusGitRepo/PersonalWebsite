@@ -690,19 +690,16 @@ table, th, td {
     max-width: 50%;
     text-indent: 60px;
 }
-#SLparaCon1,
-#SLparaCon2 {
+#SLparaCon1, #SLparaCon2{
     color: rgb(59, 0, 37);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-size: 1rem;
-    margin: 5px auto; /* Center horizontally */
+    margin: 5px 0 5px 25%;
+    margin-left: 25%;
     word-wrap: break-word;
-    max-width: 600px; /* Fixed max-width is more stable */
+    max-width: 50%;
     text-indent: 60px;
-    position: relative;
-    top: -20px; /* Instead of negative % margin */
 }
-
 
 #para1 {
     color: rgb(59, 0, 37);
