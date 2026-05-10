@@ -19,6 +19,16 @@ function toggleClass() {
     document.querySelector('.imgs').classList.toggle('active');
 }
 
+function scrollToSection(sectionId){
+
+    const section = document.getElementById(sectionId);
+
+    section.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
 // Select the images by their classes
 const image1 = document.querySelector('.Amino');
 const image2 = document.querySelector('.Excel');

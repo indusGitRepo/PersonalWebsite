@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="TF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Skills and Experiences</title>
-        <link rel="stylesheet" href="skillsStyle.css">
-        <script src="skills.js" defer></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans Mono">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans">
-    </head>
-</body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills and Experiences</title>
+
+    <link rel="stylesheet" href="skillsStyle.css">
+    <script src="skills.js" defer></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans">
+</head>
+
+<body>
     <div class="logo-container">
         <a href="index.html">
             <img src="images/logo.png" alt="Logo" class="logo">
@@ -64,9 +73,54 @@
     
         
         <h2 id="header">Skills and Experiences</h2>
-        <p id="para1">The following will highlight my work experiences and technical abilities!</p>
+        <p id="para1">
+            The following will highlight my work experiences and technical abilities!
+        </p>
+<!-- EXPERIENCE NAVIGATION -->
 
-        <div class="set">
+<div class="experience-nav">
+
+    <h2 class="experience-title">Explore My Work Experiences</h2>
+
+    <div class="experience-buttons">
+
+        <button class="experience-btn"
+            onclick="scrollToSection('trouw-section')">
+
+            <img src="images/nutreco.png" alt="Trouw Nutrition">
+
+            <span>Trouw Nutrition</span>
+
+            <p>Project Coordinator</p>
+
+        </button>
+
+        <button class="experience-btn"
+            onclick="scrollToSection('sunlife-section')">
+
+            <img src="images/sunlifelogo.png" alt="Sun Life">
+
+            <span>Sun Life</span>
+
+            <p>Business Systems Analyst</p>
+
+        </button>
+
+        <button class="experience-btn"
+            onclick="scrollToSection('newintern-section')">
+
+            <img src="images/sunlifelogo.png" alt="Sun Life">
+
+            <span>Sun Life</span>
+
+            <p>Cloud Infrastructure Analyst</p>
+
+        </button>
+
+    </div>
+
+</div>
+<div class="set" id="trouw-section">
             <div class="logos">
                 <img src="images/nutreco.png" alt="nutreco icon" id="nutreco">
             </div>
@@ -242,7 +296,7 @@
         </div>
         <h2 class="Acknowledgments">Acknowledgments</h2><br><br><br><br>
         <p id="Acknowledgments">Lastly, I wanted to acknowledge my Manager Blanca Villegas and the Preditive Ordering Project Manager Brad McIntyre for their continous support throughout both my work terms!</p>
-        <div class="set">
+        <div class="set" id="sunlife-section">
 
             <div class="SL-logos">
                 <img src="images/sunlifelogo.png" alt="nutreco icon" id="nutreco">
@@ -297,7 +351,98 @@
             
                
              </div>
-        
+        <!-- NEW EXPERIENCE -->
+
+<div class="set" id="newintern-section">
+
+    <div class="logos">
+        <img src="images/sunlifelogo.png"
+            alt="new company logo"
+            id="nutreco">
+    </div>
+
+    <div class="jobs">
+        <h2 id="cai">Cloud Infrastructure Analyst</h2>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h2 class="subtitle">Intro</h2>
+
+    <p id="para">
+        During winter 2026, I went back to Sun Life for a second term, but this time as a Cloud Infrastructure Analyst! Over the past few months I got hands on experience with AWS, presented at many events, and felt I had a very important role within my team.
+        There were many changes along the term, and I had actually moved to a different team, but throughout all of those challenges I had a fun and meaningful co-op term.
+    </p>
+
+    <h2 class="subtitle">Cloud @ Sun Life?</h2>
+
+    <p id="para2">
+        As mentioned above Sun Life is a global financial services company, and I got to learn more about the way Sun Life utilizes cloud. The areas of computing I was exposed to throughout my term were AWS cloud services,
+        cloud infrastructure, & AI, specifically agentic AI. During the first half of my term I focused on cloud infrastructure for the Data Science Workbench team, however my new team the AI Delivery Excelerator, was more focused on
+        streamlining AI intitiaves at Sun Life as every few weeks/months there's new technology being introduced and that needs to be rolled out and tested.
+
+        <br><br>
+
+        Overall, I got to understand how Cloud started at Sun Life, and the direction it is heading, which is a positive one for Cloud Infrastructure Analysts, especially in the era of AI!
+    </p>
+
+    <h2 class="subtitle">Job Description</h2>
+
+    <p id="para4">
+        I was primarily responsible for enabling new Bedrock models for users in AWS, and eventually supporting the transition of that manual process into a pipeline that automatically does that for you. This responsibility strengthened my communication skills as
+        users may have had issues or weren't aware of all the risk assesments, process changes, and AWS specific requirements that were present for model enablements. I was also responsible for a large number of other support tickets, which involved looking at users' errors in AWS, and resolving them.
+
+        <br><br>
+
+        I reasearched and worked on automating self-serve capabilities for an AWS Service called Q Business to allow users to automatically connect their chatbot applications to JIRA tickets, Confluence pages, & SharePoint. My focus was specifically connecting to SharePoint, and working with AWS to understand limitations and work arounds with issues we were having with that connection.
+
+        <br><br>
+
+        Lastly, as a Cloud Infrastructure Analyst in the AI space, I learned about new AI initiatives, for example, AWS Bedrock AgentCore, and presented my learning and hands on workshops to 80+ people. I also presented demos in front of our whole department, as well as student innovation challenges. These presentations and demos allowed me to get a lot more visibility within the company and allowed me to have a deeper understanding of the topics I was presenting.
+        My other responsibilities included creating reports for some of our chatbots and how they were being used, documentation on our current processes, new AWS services and how to use them for end users, and onboarding documentation for new co-ops/hires.
+
+        <br><br>
+
+        Overall, the work was very interesting and a good balance between tech, leadership skills, and best business practices. 
+    </p>
+
+    <h2 class="goals">Goals & Learning Outcomes</h2>
+
+    <p id="para3">
+        At the beginning of my work term, I set goals focused on strengthening my technical knowledge, communication abilities, teamwork, and professional development. To achieve my technological literacy goals, I worked on AWS-related projects, completed independent learning through resources such as Udemy and team documentation, and applied my knowledge through hands-on experience with cloud services and automation scripts using PowerShell and AWS CLI. I also improved my oral communication skills by presenting demos, leading meetings, and delivering presentations to both small teams and larger audiences, where I received positive feedback on my clarity and engagement. 
+        In addition, I focused on networking and teamwork by attending team events, participating in coffee chats, and building stronger connections with colleagues across different departments. Finally, I achieved my written communication goal by creating detailed documentation and knowledge-sharing resources that supported both current team members and future co-ops in understanding processes and tools more effectively.
+        <br><br>
+        Below are my completed goals and reflections in more detail.
+
+        <div class="goalButton">
+            <a href="pdf/Inderjeet Gill - Goals _ Learning Outcomes (2).pdf" target="_blank" class="res">
+                Click to see detailed goals and reflections.
+            </a>
+        </div>
+    </p>
+
+    <h2 class="conCAI">Conclusion</h2>
+
+    <p id="paraCon1">
+        In conclusion, I really enjoyed my term, it was very challenging but rewarding at the same time. I felt like an important member of the team, and learned so much from my colleagues.
+        After this term I am considering a career in cloud, as there's still lots to learn and career opportunities in this field of computer science.
+    </p>
+    <div class="photos">
+        <div class="cloudPhoto">
+            <img src="images/IMG_0353.jpg" alt="Cloud Analyst Experience" id="cloudPhoto">
+        </div>
+    </div>
+
+    <h2 class="Acknowledgments">Acknowledgments</h2>
+
+    <p id="Acknowledgments">
+        Lastly, I wanted to give a huge shoutout to my managers Sally Tomasevic and Dan Groen for all of the support throughout my term, and I felt they were very invested in not just the work I was doing,
+        but also my personal goals beyond that!
+    </p>
+
+</div>
         <div class="skills">
             <h2 id="skill">Skills</h2>
         </div>

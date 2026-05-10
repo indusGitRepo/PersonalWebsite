@@ -324,6 +324,12 @@ table, th, td {
 .set{
     margin-top: -35px;
 }
+#newintern-section{
+    margin-top: 20%;
+}
+#cai{
+    margin-top: 1.5%;
+}
 .skills{
     display: flex;
     flex-direction: column;
@@ -372,6 +378,23 @@ table, th, td {
     color: #272626;
     text-shadow: 2px 2px 2px white;
 }
+#cloudPhoto {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.1);
+    margin-left: 40%;
+}
+.conCAI{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20%;
+    transition: color 0.3s;
+    font-size: 2rem;
+    color: #272626;
+    text-shadow: 2px 2px 2px white;
+}
 .SLcon{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
@@ -385,7 +408,7 @@ table, th, td {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 1%;
     transition: color 0.3s;
     font-size: 2rem;
     color: #272626;
@@ -1523,4 +1546,114 @@ table, th, td {
 
 .goalButton a:hover {
     filter: brightness(1.1);
+}
+
+
+/* =========================
+   EXPERIENCE NAVIGATION
+========================= */
+
+.experience-nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.experience-title{
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.experience-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.experience-btn{
+    width: 260px;
+    min-height: 240px;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+
+    padding: 2rem;
+
+    color: white;
+
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+
+.experience-btn:hover{
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.16);
+}
+
+.experience-btn img{
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+.experience-btn span{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.experience-btn p{
+    opacity: 0.8;
+}
+
+.new-icon{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    border: 2px dashed white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto auto 1rem auto;
+
+    font-size: 3rem;
+}
+
+/* SMOOTH SCROLL */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px){
+
+    .experience-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-btn{
+        width: 85%;
+    }
+
+    .experience-title{
+        font-size: 2rem;
+    }
 }
